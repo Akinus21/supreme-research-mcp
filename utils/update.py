@@ -13,11 +13,11 @@ import platform
 
 from .logger import log
 
-BASE_DIR = Path(__file__).resolve().parent.parent  # uv_base folder
+BASE_DIR = Path(__file__).resolve().parent.parent  # supreme-research-mcp folder
 PYPROJECT_PATH = BASE_DIR / "pyproject.toml"
 
 # Change this to your main app's CLI module name for restart command
-APP_ENTRYPOINT = "uv_base"  # <<< REPLACE this with your actual main app module name
+APP_ENTRYPOINT = "supreme-research-mcp"  # <<< REPLACE this with your actual main app module name
 
 
 # Platform notification functions

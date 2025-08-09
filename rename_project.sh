@@ -6,7 +6,7 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-OLD_NAME="uv_base"
+OLD_NAME="supreme-research-mcp"
 NEW_NAME="$1"
 
 if [ ! -f "pyproject.toml" ]; then
