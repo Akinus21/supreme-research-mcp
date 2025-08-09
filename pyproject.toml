@@ -16,11 +16,15 @@ dependencies = [
     "toml",
     "packaging",
     "win10toast; sys_platform == 'win32'",
+    "mcp>=1.12.4",
+    "python-dotenv>=1.1.1",
+    "arxiv>=2.2.0",
+    "beautifulsoup4>=4.13.4",
 ]
 
 [project.scripts]
 supreme_research_mcp = "supreme_research_mcp.__main__:main"
-supreme_research_mcp_update = "supreme_research_mcp.utils.update:main"
+supreme_research_mcp_update = "supreme_research_mcp.akinus_utils.update:main"
 
 # Use setuptools package discovery here:
 [tool.setuptools.packages.find]

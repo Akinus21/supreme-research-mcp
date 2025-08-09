@@ -11,83 +11,13 @@ from pathlib import Path
 from packaging import version
 import platform
 import pathlib
+from win10toast import ToastNotifier # pyright: ignore[reportMissingImports]
+from akinus_utils.notify import notify
+from akinus_utils.logger import local as log
+from akinus_utils.app_details import PYPROJECT_PATH, APP_ENTRYPOINT, REPO_OWNER, PROJECT_ROOT, APP_NAME, APP_VERSION
 
-from .logger import log
-
-BASE_DIR = Path(__file__).resolve().parent.parent  # supreme_research_mcp folder
-def find_pyproject():
-    cwd = pathlib.Path.cwd()
-    for parent in [cwd] + list(cwd.parents):
-        candidate = parent / "pyproject.toml"
-        if candidate.is_file():
-            return candidate
-    return None
-
-PYPROJECT_PATH = find_pyproject()
 if PYPROJECT_PATH is None:
     raise FileNotFoundError("Could not find pyproject.toml in current or parent dirs")
-
-# Change this to your main app's CLI module name for restart command
-APP_ENTRYPOINT = "supreme_research_mcp"  # <<< REPLACE this with your actual main app module name
-
-
-# Platform notification functions
-def notify(title: str, message: str):
-    system = platform.system()
-    try:
-        if system == "Linux":
-            subprocess.run(["notify-send", title, message])
-        elif system == "Windows":
-            from win10toast import ToastNotifier
-            toaster = ToastNotifier()
-            toaster.show_toast(title, message, duration=5)
-        elif system == "Darwin":
-            script = f'display notification "{message}" with title "{title}"'
-            subprocess.run(["osascript", "-e", script])
-        else:
-            print(f"{title}: {message}")
-    except Exception as e:
-        asyncio.run(log("WARNING", "update.py", f"Notification failed: {e}"))
-        print(f"{title}: {message}")
-
-
-async def get_repo_info():
-    try:
-        with open(PYPROJECT_PATH) as f:
-            pyproject = toml.load(f)
-        project = pyproject.get("project", {})
-        authors = project.get("authors")
-        if not authors or not isinstance(authors, list):
-            raise ValueError("The 'authors' field must be a non-empty list of tables with 'name' keys.")
-        
-        first_author = authors[0]
-        if not isinstance(first_author, dict) or "name" not in first_author:
-            raise ValueError("Each author entry must be a table with a 'name' key.")
-
-        repo_owner = first_author["name"].strip()
-        repo_name = project.get("name", "").strip()
-
-        if not repo_owner:
-            raise ValueError("Author 'name' is empty.")
-        if not repo_name:
-            raise ValueError("Project 'name' is missing or empty.")
-
-        return repo_owner, repo_name
-
-    except Exception as e:
-        await log("ERROR", "update.py", f"Failed to parse pyproject.toml for repo info: {e}")
-        print(f"Warning: Could not parse repository info from pyproject.toml. Using fallback values. Error: {e}")
-        return "unknown_owner", "unknown_repo"
-
-
-def get_local_version():
-    try:
-        with open(PYPROJECT_PATH) as f:
-            pyproject = toml.load(f)
-        return pyproject["project"]["version"]
-    except Exception as e:
-        asyncio.run(log("ERROR", "update.py", f"Failed to read local version: {e}"))
-        return None
 
 
 async def get_latest_release(repo_owner, repo_name):
@@ -160,11 +90,12 @@ def restart_app():
 
 
 async def perform_update():
-    repo_root = BASE_DIR
-    repo_owner, repo_name = await get_repo_info()
+    repo_root = PROJECT_ROOT
+    repo_owner = REPO_OWNER
+    repo_name = APP_NAME
     await log("INFO", "update.py", f"Starting update check for {repo_owner}/{repo_name}...")
 
-    local_ver = get_local_version()
+    local_ver = APP_VERSION
     latest_ver, release_data = await get_latest_release(repo_owner, repo_name)
 
     if not local_ver or not latest_ver:
