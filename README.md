@@ -1,4 +1,4 @@
-# supreme-research-mcp
+# supreme_research_mcp
 Base template for a simple Python project using [uv](https://docs.astral.sh/uv/).
 
 ## Description
@@ -10,9 +10,9 @@ A simple CLI example that runs instantly after cloning, or can be installed glob
 Clone the repository and run the project directly with `uv`:
 
 ```bash
-git clone https://github.com/YOURNAME/supreme-research-mcp.git
-cd supreme-research-mcp
-uv run supreme-research-mcp
+git clone https://github.com/YOURNAME/supreme_research_mcp.git
+cd supreme_research_mcp
+uv run supreme_research_mcp
 ```
 This will:
 
@@ -20,24 +20,24 @@ Create an isolated virtual environment in .venv (if it doesn’t already exist)
 
 Install any dependencies from pyproject.toml
 
-Run the supreme-research-mcp CLI
+Run the supreme_research_mcp CLI
 
 🌍 Install Globally
 If you want to use the CLI anywhere on your system without uv run:
 
 ```bash
-git clone https://github.com/YOURNAME/supreme-research-mcp.git
-cd supreme-research-mcp
+git clone https://github.com/YOURNAME/supreme_research_mcp.git
+cd supreme_research_mcp
 uv pip install .
 ```
 Then run:
 
 ```bash
-supreme-research-mcp
+supreme_research_mcp
 ```
 from any directory.
 
 🗑️ Uninstall
 ```bash
-uv pip uninstall supreme-research-mcp
+uv pip uninstall supreme_research_mcp
 ```

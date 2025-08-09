@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "supreme-research-mcp"
+name = "supreme_research_mcp"
 version = "0.1.0"
 authors = [
     { name = "Akinus21", email = "akinus.21.dev@gmail.com" }
@@ -17,11 +17,11 @@ dependencies = [
     "packaging",
     "win10toast; sys_platform == 'win32'",
 ]
-packages = ["supreme-research-mcp"]  # <- Explicitly specify your package
+packages = ["supreme_research_mcp"]  # <- Explicitly specify your package
 
 [tool.setuptools.packages.find]
-where = ["supreme-research-mcp"] 
+where = ["supreme_research_mcp"] 
 
 [project.scripts]
-supreme-research-mcp = "supreme-research-mcp.__main__:main"
-supreme-research-mcp_update = "supreme-research-mcp.utils.update:main"
+supreme_research_mcp = "supreme_research_mcp.__main__:main"
+supreme_research_mcp_update = "supreme_research_mcp.utils.update:main"
