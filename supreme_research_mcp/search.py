@@ -5,9 +5,16 @@ import arxiv
 from datetime import datetime
 from bs4 import BeautifulSoup
 import time
+import asyncio
+from akinus_utils.app_details import PROJECT_ROOT
+from akinus_utils.logger import local as log
 
 # Load environment variables from .env file in the project root
-load_dotenv()
+env_file = os.path.join(PROJECT_ROOT, '.env')
+if os.path.exists(env_file):
+    load_dotenv(env_file)
+else:
+    raise FileNotFoundError(f"Environment file not found: {env_file}")
 
 CORE_API_KEY = os.getenv("CORE_API_KEY")
 
@@ -88,6 +95,8 @@ def arxiv_search(query: str, limit: int = 5):
 def brave_search(query: str, limit: int = 5):
     """
     Scrape Brave search results for a query, returning a list of metadata dicts.
+    Fields standardized for academic references:
+    title, authors, year, journal, doi, url, abstract
     """
     base_url = "https://search.brave.com/search"
     params = {
@@ -95,7 +104,8 @@ def brave_search(query: str, limit: int = 5):
         "page": 1,
     }
     headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; Bot/1.0; +https://yourdomain.com/bot)"
+        "User-Agent": "Mozilla/5.0 (compatible; Bot/1.0; +https://yourdomain.com/bot)",
+        "Accept-Encoding": "gzip, deflate"
     }
 
     results = []
@@ -104,11 +114,8 @@ def brave_search(query: str, limit: int = 5):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
 
-        # Find result containers
         items = soup.select("div[data-testid='result']")
-
         if not items:
-            # No results found or page structure changed
             break
 
         for item in items:
@@ -121,14 +128,65 @@ def brave_search(query: str, limit: int = 5):
             title = title_tag.get_text(strip=True) if title_tag else None
             snippet = desc_tag.get_text(strip=True) if desc_tag else None
 
-            results.append({
+            # Brave search results do not provide authors, year, journal, or doi info.
+            meta = {
                 "title": title,
+                "authors": [],            # empty list, unknown authors
+                "year": None,             # unknown year
+                "journal": None,          # unknown journal/source
+                "doi": None,              # unknown DOI
                 "url": url,
-                "snippet": snippet
-            })
+                "abstract": snippet       # use snippet as abstract substitute
+            }
+            results.append(meta)
 
-        # Go to next page if needed
         params["page"] += 1
         time.sleep(1)  # polite delay
 
     return results
+
+async def async_core_search(query, max_results):
+    try:
+        results = await asyncio.to_thread(core_search, query, max_results)
+        await log("INFO", "search.py", f"core_search completed for query: {query}")
+        return results
+    except Exception as e:
+        # Log error and return empty list or None
+        await log("ERROR", "search.py", f"core_search failed: {e}")
+        print(f"core_search failed: {e}")
+        return []
+
+async def async_arxiv_search(query, max_results):
+    try:
+        results = await asyncio.to_thread(arxiv_search, query, max_results)
+        await log("INFO", "search.py", f"arxiv_search completed for query: {query}")
+        return results
+    except Exception as e:
+        await log("ERROR", "search.py", f"arxiv_search failed: {e}")
+        print(f"arxiv_search failed: {e}")
+        return []
+
+async def async_brave_search(query, max_results):
+    try:
+        results = await asyncio.to_thread(brave_search, query, max_results)
+        await log("INFO", "search.py", f"brave_search completed for query: {query}")
+        return results
+    except Exception as e:
+        await log("ERROR", "search.py", f"brave_search failed: {e}")
+        print(f"brave_search failed: {e}")
+        return []
+
+async def run_all_searches(query, max_results):
+    results = await asyncio.gather(
+        async_core_search(query, max_results),
+        async_arxiv_search(query, max_results),
+        async_brave_search(query, max_results),
+        return_exceptions=True  # Ensures all run even if one raises
+    )
+
+    # results will be a list in order: [core_results, arxiv_results, brave_results]
+    # If any raised exceptions, they appear here — but we returned empty lists on except, so should be fine.
+
+    core_results, arxiv_results, brave_results = results
+
+    return core_results, arxiv_results, brave_results

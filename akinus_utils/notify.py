@@ -1,19 +1,18 @@
 import platform
-from win10toast import ToastNotifier # pyright: ignore[reportMissingImports]
 import sys
 import asyncio
 import subprocess
 from akinus_utils.logger import local as log
 from akinus_utils.app_details import APP_NAME
 
-# Platform notification functions
 def notify(title: str, message: str):
     system = platform.system()
     try:
         if system == "Linux":
             subprocess.run(["notify-send", title, message, APP_NAME])
         elif system == "Windows":
-            from win10toast import ToastNotifier # pyright: ignore[reportMissingImports]
+            # Import Windows-only ToastNotifier here to avoid import errors on other OSes
+            from win10toast import ToastNotifier  # pyright: ignore[reportMissingImports]
             toaster = ToastNotifier()
             toaster.show_toast(title, message, duration=5)
         elif system == "Darwin":
@@ -22,5 +21,6 @@ def notify(title: str, message: str):
         else:
             print(f"{title}: {message}")
     except Exception as e:
-        asyncio.run(log("WARNING", "update.py", f"Notification failed: {e}"))
+        asyncio.run(log("WARNING", "notify.py", f"Notification failed: {e}"))
         print(f"{title}: {message}")
+

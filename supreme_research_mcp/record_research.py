@@ -1,5 +1,5 @@
 from pathlib import Path
-from akinus_utils.logger import log
+from akinus_utils.logger import local as log
 from akinus_utils.app_details import PROJECT_ROOT
 
 def write_data(data):

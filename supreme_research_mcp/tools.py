@@ -1,6 +1,6 @@
 from web.server import mcp
 from akinus_utils.logger import local as log
-from supreme_research_mcp.search import core_search, arxiv_search, brave_search
+from supreme_research_mcp.search import run_all_searches
 from supreme_research_mcp.record_research import write_data
 from akinus_utils.transform.academic.references import apa as format_references
 
@@ -19,38 +19,45 @@ async def deep_research(query: str, max_results: int = 10) -> list:
     await log("INFO", "tools.py", f"Performing deep search for query: {query} with max results: {max_results}")
     
     try:
-        # Simulate a deep search operation
+        # Extract all text content (abstracts, snippets, etc.) into one list
+        research = await run_all_searches(query, max_results)
         
+        if not research:
+            await log("WARNING", "tools.py", f"No results found for query: {query}")
+            return []
         
-        # Here you would implement the actual search logic
-        # Call each search
-        core_results = core_search(query, max_results)
-        arxiv_results = arxiv_search(query, max_results)
-        brave_results = brave_search(query, max_results)
+        text_results = []
+        for source_results in (research[0], research[1], research[2]):
+            for item in source_results:
+                # abstract or snippet or empty string fallback
+                text = item.get("abstract") or item.get("snippet") or ""
+                if text:
+                    text_results.append(text)
 
-        # Add source info
-        for r in core_results:
-            r["source"] = "core"
-        for r in arxiv_results:
-            r["source"] = "arxiv"
-        for r in brave_results:
-            r["source"] = "brave"
-
-        # Combine all results
-        combined = core_results + arxiv_results + brave_results
-
-        # Create references list
-        references = [format_references(item) for item in combined]
-
-        # Prepare output dict
-        results = {
-            "query": query,
-            "results": combined,
-            "references": references
-        }
+        # Extract reference dicts and format them using your APA function
+        formatted_references = []
+        for source_results in (research[0], research[1], research[2]):
+            for item in source_results:
+                # Prepare dict for formatting
+                ref_data = {
+                    "author": ", ".join(item.get("authors", [])) if item.get("authors") else "Unknown Author",
+                    "year": item.get("year", "n.d."),
+                    "title": item.get("title", "Untitled"),
+                    "source": item.get("journal", ""),
+                    "publisher": "",   # Not provided by your search results, so empty
+                    "url": item.get("url", "")
+                }
+                # Format reference string
+                formatted = format_references(ref_data)
+                formatted_references.append(formatted)
 
         # Write data to file
-        write_data(str(results))
+        write_data("\n\n".join(text_results))  # abstracts and snippets
+        write_data("\n\n".join(formatted_references))  # formatted APA refs
+        results = {
+            "text_results": text_results,
+            "formatted_references": formatted_references
+        }
         await log("INFO", "tools.py", f"Deep search completed for query: {query}")
         return results
     except Exception as e:

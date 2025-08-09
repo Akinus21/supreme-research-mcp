@@ -1,5 +1,5 @@
-from akinus_utils.case.upper_snake import upper_snake
-from akinus_utils.logger import log
+from akinus_utils.transform.case.snake.upper import upper_snake
+from akinus_utils.logger import local as log
 
 def screaming_snake(text: str) -> str:
     """

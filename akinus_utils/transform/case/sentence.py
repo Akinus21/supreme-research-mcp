@@ -1,4 +1,4 @@
-from akinus_utils.logger import log
+from akinus_utils.logger import local as log
 
 def sentence(text: str) -> str:
     """

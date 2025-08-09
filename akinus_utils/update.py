@@ -2,7 +2,6 @@ import sys
 import subprocess
 import requests
 import os
-import toml
 import asyncio
 import shutil
 import tempfile
@@ -10,8 +9,6 @@ import zipfile
 from pathlib import Path
 from packaging import version
 import platform
-import pathlib
-from win10toast import ToastNotifier # pyright: ignore[reportMissingImports]
 from akinus_utils.notify import notify
 from akinus_utils.logger import local as log
 from akinus_utils.app_details import PYPROJECT_PATH, APP_ENTRYPOINT, REPO_OWNER, PROJECT_ROOT, APP_NAME, APP_VERSION

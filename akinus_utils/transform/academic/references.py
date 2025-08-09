@@ -1,5 +1,6 @@
-from akinus_utils.logger import log
-from akinus_utils.transform.case import case  # Assuming case class is in case.py
+from akinus_utils.logger import local as log
+from akinus_utils.transform.case import sentence as sentence_case
+from akinus_utils.transform.case import title as title_case
 
 def apa(data: dict) -> str:
     """
@@ -24,8 +25,8 @@ def apa(data: dict) -> str:
     year = str(data.get("year", "n.d."))
     raw_title = data.get("title", "Untitled")
     # Convert to sentence case only if needed
-    if raw_title and raw_title != case.sentence(raw_title):
-        title = case.sentence(raw_title)
+    if raw_title and raw_title != sentence_case(raw_title):
+        title = sentence_case(raw_title)
     else:
         title = raw_title
 
@@ -71,8 +72,8 @@ def mla(data: dict) -> str:
     author = data.get("author", "Unknown Author")
     raw_title = data.get("title", "Untitled")
     # Convert to title case only if needed
-    if raw_title and raw_title != case.title_case(raw_title):
-        title = case.title_case(raw_title)
+    if raw_title and raw_title != title_case(raw_title):
+        title = title_case(raw_title)
     else:
         title = raw_title
 

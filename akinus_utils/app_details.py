@@ -1,9 +1,7 @@
 
-
 from pathlib import Path
 import pathlib
 import tomllib
-from akinus_utils.logger import local as log
 import toml
 
 # ---------------------- Define the main app entrypoint -------------------
@@ -15,29 +13,10 @@ def find_project_root(start_path: Path) -> Path:
     for parent in [start_path] + list(start_path.parents):
         if (parent / "pyproject.toml").is_file():
             return parent
-    raise FileNotFoundError("Could not find pyproject.toml in any parent directory.")
+    raise FileNotFoundError("Could not find pyproject.toml in any parent directory.  Start path: {start_path}")
 
 # ------------------- Define the project root directory -------------------
-PROJECT_ROOT = find_project_root(Path(__file__).resolve())
-# -------------------------------------------------------------------------
-
-def app_name() -> str:
-    """Read the app name from pyproject.toml."""
-
-    with open(PYPROJECT_PATH, "rb") as f:
-        data = tomllib.load(f)
-
-    # Works for Poetry, Hatch, or generic tool metadata
-    if "tool" in data:
-        if "poetry" in data["tool"] and "name" in data["tool"]["poetry"]:
-            return data["tool"]["poetry"]["name"]
-        elif "hatch" in data["tool"] and "name" in data["tool"]["hatch"]:
-            return data["tool"]["hatch"]["name"]
-
-    raise KeyError("App name not found in pyproject.toml")
-
-# ------------------- Define the app name ---------------------------------
-APP_NAME = app_name()
+PROJECT_ROOT = find_project_root(Path.cwd())
 # -------------------------------------------------------------------------
 
 def find_pyproject():
@@ -52,7 +31,29 @@ def find_pyproject():
 PYPROJECT_PATH = PROJECT_ROOT / "pyproject.toml"
 #--------------------------------------------------------------------------
 
-async def find_repo_owner():
+def app_name() -> str:
+    """Read the app name from pyproject.toml."""
+    with open(PYPROJECT_PATH, "rb") as f:
+        data = tomllib.load(f)
+
+    # Check top-level 'project' key (PEP 621)
+    if "project" in data and "name" in data["project"]:
+        return data["project"]["name"]
+
+    # Check legacy or tool-specific locations (Poetry, Hatch)
+    if "tool" in data:
+        if "poetry" in data["tool"] and "name" in data["tool"]["poetry"]:
+            return data["tool"]["poetry"]["name"]
+        elif "hatch" in data["tool"] and "name" in data["tool"]["hatch"]:
+            return data["tool"]["hatch"]["name"]
+
+    raise KeyError("App name not found in pyproject.toml")
+
+# ------------------- Define the app name ---------------------------------
+APP_NAME = app_name()
+# -------------------------------------------------------------------------
+
+def find_repo_owner():
     try:
         with open(PYPROJECT_PATH) as f:
             pyproject = toml.load(f)
@@ -73,7 +74,6 @@ async def find_repo_owner():
         return repo_owner
 
     except Exception as e:
-        await log("ERROR", "update.py", f"Failed to parse pyproject.toml for repo info: {e}")
         print(f"Warning: Could not parse repository info from pyproject.toml. Using fallback values. Error: {e}")
         return "unknown_owner", "unknown_repo"
 
@@ -88,7 +88,7 @@ def get_app_version():
             pyproject = toml.load(f)
         return pyproject["project"]["version"]
     except Exception as e:
-        log("ERROR", "app_details.py", f"Failed to read app version: {e}")
+        print(f"ERROR app_details.py!! Failed to read app version: {e}")
         return "0.0.0"  # Fallback version if reading fails
     
 # ------------------- Define the app version --------------------------------
