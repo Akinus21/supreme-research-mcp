@@ -2,7 +2,7 @@ from akinus_utils.logger import local as log
 from akinus_utils.transform.case import sentence as sentence_case
 from akinus_utils.transform.case import title as title_case
 
-def apa(data: dict) -> str:
+async def apa(data: dict) -> str:
     """
     Format a reference in APA 7th edition style.
 
@@ -24,10 +24,15 @@ def apa(data: dict) -> str:
     author = data.get("author", "Unknown Author")
     year = str(data.get("year", "n.d."))
     raw_title = data.get("title", "Untitled")
-    # Convert to sentence case only if needed
-    if raw_title and raw_title != sentence_case(raw_title):
-        title = sentence_case(raw_title)
-    else:
+    
+    try:
+        # Convert to sentence case only if needed
+        if raw_title and raw_title != sentence_case(raw_title):
+            title = sentence_case(raw_title)
+        else:
+            title = raw_title
+    except Exception as e:
+        log("error", "academic.references.apa", f"Error formatting title: {e}")
         title = raw_title
 
     source = data.get("source", "")

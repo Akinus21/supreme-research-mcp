@@ -4,6 +4,7 @@ import platform
 import asyncio
 from pathlib import Path
 from datetime import datetime
+import inspect
 
 from akinus_utils.app_details import PROJECT_ROOT
 
@@ -42,12 +43,23 @@ def _write_log_line(line: str):
 
 async def local(message_type: str, script: str, message: str):
     """
-    Async log to local file (logger.log) in the format:
-    priority timestamp: message type: script name: Message
+    Async log to local file (logger.log) with file name and line number of the caller.
+    Format:
+    priority timestamp: MESSAGE_TYPE: script_name:filename:line_number: Message
     """
+    # Get caller info
+    frame = inspect.stack()[1]
+    caller_file = frame.filename.split("/")[-1]  # just the file name
+    caller_line = frame.lineno
+    caller_func = frame.function
+
     priority = LOG_LEVELS.get(message_type.upper(), 20)  # Default INFO
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    line = f"{priority} {timestamp}: {message_type.upper()}: {script}: {message}\n"
+    
+    line = (
+        f"{priority} {timestamp}: {message_type.upper()}: "
+        f"{caller_file}:{caller_line} ({caller_func}): {message}\n"
+    )
 
     async with log_lock:
         loop = asyncio.get_running_loop()

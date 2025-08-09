@@ -80,3 +80,344 @@
 20 2025-08-09 15:57:16: INFO: search.py: arxiv_search completed for query: In systems engineering, how do I complete a risk register
 40 2025-08-09 15:57:21: ERROR: search.py: core_search failed: 500 Server Error: Internal Server Error for url: https://api.core.ac.uk/v3/search/works/?q=In+systems+engineering%2C+how+do+I+complete+a+risk+register&page=1&pageSize=10&metadata=true
 40 2025-08-09 15:57:21: ERROR: tools.py: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:06:58: INFO: update.py: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:06:58: ERROR: update.py: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:06:58: WARNING: update.py: Could not determine versions, skipping update.
+20 2025-08-09 16:07:49: INFO: tools.py: Performing deep search for query: Battle of Kettle Creek in Georgia with max results: 10
+40 2025-08-09 16:07:50: ERROR: search.py: brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Battle+of+Kettle+Creek+in+Georgia&page=1
+20 2025-08-09 16:07:50: INFO: search.py: arxiv_search completed for query: Battle of Kettle Creek in Georgia
+20 2025-08-09 16:11:10: INFO: update.py: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:11:10: ERROR: update.py: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:11:10: WARNING: update.py: Could not determine versions, skipping update.
+20 2025-08-09 16:12:32: INFO: tools.py: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:12:33: INFO: search.py: brave_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:12:33: INFO: search.py: arxiv_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:12:53: ERROR: search.py: scholarly_search timeout after 20s for query: battle of kettle creek in Georgia
+40 2025-08-09 16:12:53: ERROR: tools.py: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:16:58: INFO: update.py: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:16:58: ERROR: update.py: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:16:58: WARNING: update.py: Could not determine versions, skipping update.
+20 2025-08-09 16:17:31: INFO: tools.py: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:17:31: INFO: search.py: arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:17:32: INFO: search.py: brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:17:32: ERROR: tools.py: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:26:14: INFO: update.py: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:26:15: ERROR: update.py: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:26:15: WARNING: update.py: Could not determine versions, skipping update.
+20 2025-08-09 16:26:27: INFO: tools.py: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:26:27: INFO: search.py: arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:26:28: INFO: search.py: brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:26:30: ERROR: tools.py: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:30:11: INFO: update.py: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:30:11: ERROR: update.py: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:30:11: WARNING: update.py: Could not determine versions, skipping update.
+20 2025-08-09 16:30:20: INFO: tools.py: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:30:20: INFO: search.py: arxiv_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:30:20: ERROR: search.py: semantic_scholar_search failed: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=battle+of+kettle+creek+in+Georgia&limit=10&fields=title%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 16:30:20: INFO: search.py: brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:30:20: ERROR: tools.py: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:31:15: INFO: update.py: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:31:15: ERROR: update.py: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:31:15: WARNING: update.py: Could not determine versions, skipping update.
+20 2025-08-09 16:31:26: INFO: tools.py: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:31:26: INFO: search.py: arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:31:27: INFO: search.py: brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:31:27: ERROR: tools.py: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:35:04: INFO: update.py: update.py:93 in perform_update: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:35:04: ERROR: update.py: update.py:29 in get_latest_release: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:35:04: WARNING: update.py: update.py:99 in perform_update: Could not determine versions, skipping update.
+20 2025-08-09 16:35:50: INFO: update.py:93 in perform_update: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:35:50: ERROR: update.py:29 in get_latest_release: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:35:50: WARNING: update.py:99 in perform_update: Could not determine versions, skipping update.
+20 2025-08-09 16:36:17: INFO: tools.py:19 in deep_research: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:36:17: INFO: search.py:184 in async_arxiv_search: arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:36:17: INFO: search.py:194 in async_brave_search: brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:36:17: ERROR: tools.py:64 in deep_research: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:37:29: INFO: update.py:93 in perform_update: Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:37:29: ERROR: update.py:29 in get_latest_release: Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:37:29: WARNING: update.py:99 in perform_update: Could not determine versions, skipping update.
+20 2025-08-09 16:38:41: INFO: tools.py:19 in deep_research: Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:38:41: INFO: search.py:184 in async_arxiv_search: arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:38:41: INFO: search.py:194 in async_brave_search: brave_search completed for query: battle of kettle creek in Georgia
+10 2025-08-09 16:38:41: DEBUG: tools.py:51 in deep_research: Formatting reference: {'author': 'Unknown Author', 'year': 2019, 'title': 'The Battle Begins:', 'source': 'Columbus, Georgia, 1865', 'publisher': '', 'url': 'https://doi.org/10.2307/jj.30347719.12'}
+40 2025-08-09 16:38:41: ERROR: tools.py:65 in deep_research: Deep search failed: 'module' object is not callable
+20 2025-08-09 16:41:04: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:41:04: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:41:04: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:41:10: INFO: tools.py:19 (deep_research): Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:41:11: INFO: search.py:184 (async_arxiv_search): arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:41:11: INFO: search.py:194 (async_brave_search): brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:41:11: ERROR: tools.py:64 (deep_research): Deep search failed: 'module' object is not callable
+20 2025-08-09 16:42:41: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:42:41: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:42:41: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:42:45: INFO: tools.py:19 (deep_research): Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:42:45: INFO: search.py:184 (async_arxiv_search): arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:42:46: INFO: search.py:194 (async_brave_search): brave_search completed for query: battle of kettle creek in Georgia
+40 2025-08-09 16:42:46: ERROR: tools.py:64 (deep_research): Deep search failed: module 'asyncio' has no attribute 'run_in_executor'
+20 2025-08-09 16:45:06: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:45:06: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:45:06: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:45:11: INFO: tools.py:19 (deep_research): Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+40 2025-08-09 16:45:11: ERROR: search.py:169 (async_semantic_scholar_search): semantic_scholar_search failed: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=battle+of+kettle+creek+in+Georgia&limit=10&fields=title%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 16:45:11: INFO: search.py:184 (async_arxiv_search): arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:45:11: INFO: search.py:194 (async_brave_search): brave_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Unknown Author', 'year': 2019, 'title': 'The Battle Begins:', 'source': 'Columbus, Georgia, 1865', 'publisher': '', 'url': 'https://doi.org/10.2307/jj.30347719.12'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Stephen W. Golladay, Kevin Watt, Sally Entrekin, Juliann Battle', 'year': 2000, 'title': 'Hydrologic and geomorphic controls on suspended particulate organic matter concentration and transport in Ichawaynochaway Creek, Georgia, USA', 'source': 'Fundamental and Applied Limnology', 'publisher': '', 'url': 'https://doi.org/10.1127/archiv-hydrobiol/149/2000/655'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Unknown Author', 'year': 1986, 'title': 'Mineral resources of the Battle Creek, Yatahoney Creek, and Juniper Creek Wilderness Study Areas, Owyhee County, Idaho', 'source': None, 'publisher': '', 'url': 'https://doi.org/10.3133/b1719b'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Unknown Author', 'year': None, 'title': 'Figure 1: Study sites in Oyster Creek, a tidal creek in coastal Georgia.', 'source': None, 'publisher': '', 'url': 'https://doi.org/10.7717/peerj.15837/fig-1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Daniel P. Bigman, David Noble, Tracy Sargent, Jamie K. Pringle', 'year': 2023, 'title': 'Large-scale forensic search for fallen soldier burials from the American revolutionary war at Kettle Creek battlefield, Georgia, USA', 'source': 'Forensic Science International: Reports', 'publisher': '', 'url': 'https://doi.org/10.1016/j.fsir.2023.100313'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Unknown Author', 'year': 2011, 'title': 'Battle of Cedar Creek and the Closing of the Valley Campaign.', 'source': "A Soldier's Story of His Regiment (61st Georgia)", 'publisher': '', 'url': 'https://doi.org/10.2307/jj.30347143.24'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Earl J. Hess', 'year': 2017, 'title': 'The Battle of Peach Tree Creek', 'source': None, 'publisher': '', 'url': 'https://doi.org/10.5149/northcarolina/9781469634197.001.0001'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Earl J. Hess', 'year': 2017, 'title': 'Preparations for Battle, July 20', 'source': 'The Battle of Peach Tree Creek', 'publisher': '', 'url': 'https://doi.org/10.5149/northcarolina/9781469634197.003.0004'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'M. W. Wentworth', 'year': 1906, 'title': 'The Advertising of the Battle Creek Sanitarium Company.', 'source': 'Journal of the American Medical Association', 'publisher': '', 'url': 'https://doi.org/10.1001/jama.1906.02510520045015'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Earl J. Hess', 'year': 2017, 'title': 'Across Peach Tree Creek, July 19', 'source': 'The Battle of Peach Tree Creek', 'publisher': '', 'url': 'https://doi.org/10.5149/northcarolina/9781469634197.003.0003'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Tadeusz Kobus, Maciej Kokociński, Paweł T. Wojciechowski', 'year': 2019, 'title': 'Creek: Low-latency, Mixed-Consistency Transactional Replication Scheme', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/1907.00748v2'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Sihao Hu, Tiansheng Huang, Ling Liu', 'year': 2024, 'title': 'PokeLLMon: A Human-Parity Agent for Pokemon Battles with Large Language Models', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/2402.01118v3'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Günter Wallner', 'year': 2019, 'title': 'Enhancing Battle Maps through Flow Graphs', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/1906.04435v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Matthew Creek', 'year': 2013, 'title': 'Large-Data Global Well-Posedness for the (1 + 2)-Dimensional Equivariant Faddeev Model', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/1310.4708v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'A. I. Fisenko, V. Mikhailovskii', 'year': 2000, 'title': "The Flotational Mechanism of Etobicoke Creek's Self-Purification", 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/physics/0003047v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Emmanuel I. Rashba', 'year': 2006, 'title': 'Semiconductor Spintronics: Progress and Challenges', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/cond-mat/0611194v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Matthew Creek, Roland Donninger, Wilhelm Schlag, Stanley Snelson', 'year': 2016, 'title': 'Linear stability of the Skyrmion', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/1603.03662v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Laura J. Perovich, Sara Ann Wylie, Roseann Bongiovanni', 'year': 2020, 'title': 'Chemicals in the Creek: designing a situated data physicalization of open government data with the community', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/2009.06155v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'L. Berni, L. Spina, L. Magrini, D. Massari, J. Schiapppacasse-Ulloa, R. E. Giribaldi', 'year': 2025, 'title': 'Exploring substructures in the Milky Way halo Neural networks applied to Gaia and APOGEE DR 17', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/2507.08074v1'}
+20 2025-08-09 16:45:11: INFO: references.py:29 (apa): Formatting APA reference for: {'author': 'Duane W. Hamacher, John Goldsmith', 'year': 2013, 'title': 'Aboriginal Oral Traditions of Australian Impact Craters', 'source': 'arXiv preprint', 'publisher': '', 'url': 'http://arxiv.org/pdf/1306.0278v2'}
+20 2025-08-09 16:45:11: INFO: tools.py:61 (deep_research): Deep search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:46:38: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:46:38: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:46:38: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:48:03: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:48:03: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:48:03: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:49:18: INFO: tools.py:19 (deep_research): Performing deep search for query: battle of kettle creek in Georgia with max results: 10
+20 2025-08-09 16:49:18: INFO: search.py:184 (async_arxiv_search): arxiv_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:49:19: INFO: search.py:194 (async_brave_search): brave_search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:49:19: INFO: tools.py:61 (deep_research): Deep search completed for query: battle of kettle creek in Georgia
+20 2025-08-09 16:52:17: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:52:17: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:52:17: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:53:13: INFO: tools.py:19 (deep_research): Performing deep search for query: batttle of kettle creek in georgia with max results: 10
+20 2025-08-09 16:53:14: INFO: search.py:168 (async_semantic_scholar_search): semantic_scholar_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:53:14: INFO: search.py:188 (async_arxiv_search): arxiv_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:53:14: INFO: search.py:198 (async_brave_search): brave_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:53:14: INFO: search.py:178 (async_crossref_search): crossref_search completed for query: batttle of kettle creek in georgia
+40 2025-08-09 16:53:14: ERROR: tools.py:63 (deep_research): Deep search failed: write() argument must be str, not dict
+20 2025-08-09 16:54:42: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:54:42: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:54:42: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:54:48: INFO: tools.py:19 (deep_research): Performing deep search for query: battle of kettle creek in georgia with max results: 10
+20 2025-08-09 16:54:48: INFO: search.py:178 (async_crossref_search): crossref_search completed for query: battle of kettle creek in georgia
+20 2025-08-09 16:54:49: INFO: search.py:168 (async_semantic_scholar_search): semantic_scholar_search completed for query: battle of kettle creek in georgia
+20 2025-08-09 16:54:49: INFO: search.py:198 (async_brave_search): brave_search completed for query: battle of kettle creek in georgia
+20 2025-08-09 16:54:49: INFO: search.py:188 (async_arxiv_search): arxiv_search completed for query: battle of kettle creek in georgia
+40 2025-08-09 16:54:49: ERROR: tools.py:63 (deep_research): Deep search failed: object NoneType can't be used in 'await' expression
+20 2025-08-09 16:57:21: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 16:57:22: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 16:57:22: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 16:57:33: INFO: tools.py:19 (deep_research): Performing deep search for query: batttle of kettle creek in georgia with max results: 10
+20 2025-08-09 16:57:33: INFO: search.py:188 (async_arxiv_search): arxiv_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:57:33: INFO: search.py:178 (async_crossref_search): crossref_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:57:33: INFO: search.py:198 (async_brave_search): brave_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:57:34: INFO: search.py:168 (async_semantic_scholar_search): semantic_scholar_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 16:57:34: INFO: tools.py:61 (deep_research): Deep search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:00:34: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:00:34: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:00:34: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:00:46: INFO: tools.py:19 (deep_research): Performing deep search for query: batttle of kettle creek in georgia with max results: 10
+20 2025-08-09 17:00:46: INFO: search.py:188 (async_arxiv_search): arxiv_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:00:46: INFO: search.py:168 (async_semantic_scholar_search): semantic_scholar_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:00:47: INFO: search.py:198 (async_brave_search): brave_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:00:47: INFO: search.py:178 (async_crossref_search): crossref_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:00:47: INFO: tools.py:59 (deep_research): Deep search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:06:18: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:06:18: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:06:18: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:06:26: INFO: tools.py:19 (deep_research): Performing deep search for query: batttle of kettle creek in georgia with max results: 10
+20 2025-08-09 17:06:26: INFO: search.py:212 (async_arxiv_search): arxiv_search completed for query: batttle of kettle creek in georgia
+40 2025-08-09 17:06:26: ERROR: search.py:195 (async_semantic_scholar_search): semantic_scholar_search failed: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=batttle+of+kettle+creek+in+georgia&limit=10&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:06:27: INFO: search.py:202 (async_crossref_search): crossref_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:06:27: INFO: search.py:222 (async_brave_search): brave_search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:06:27: INFO: tools.py:59 (deep_research): Deep search completed for query: batttle of kettle creek in georgia
+20 2025-08-09 17:08:32: INFO: tools.py:19 (deep_research): Performing deep search for query: Why did America have the Civil War? with max results: 10
+20 2025-08-09 17:08:32: INFO: search.py:212 (async_arxiv_search): arxiv_search completed for query: Why did America have the Civil War?
+20 2025-08-09 17:08:32: INFO: search.py:222 (async_brave_search): brave_search completed for query: Why did America have the Civil War?
+20 2025-08-09 17:08:32: INFO: search.py:202 (async_crossref_search): crossref_search completed for query: Why did America have the Civil War?
+40 2025-08-09 17:08:33: ERROR: search.py:195 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+did+America+have+the+Civil+War%3F&limit=10&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:08:33: INFO: tools.py:59 (deep_research): Deep search completed for query: Why did America have the Civil War?
+20 2025-08-09 17:26:21: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:26:21: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:26:21: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:26:43: INFO: tools.py:19 (deep_research): Performing deep search for query: Why did America have the civil war with max results: 10
+40 2025-08-09 17:26:44: ERROR: tools.py:63 (deep_research): Deep search failed for query Why did America have the civil war: cannot access local variable 'response_text' where it is not associated with a value
+20 2025-08-09 17:28:56: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:28:56: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:28:56: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:29:04: INFO: tools.py:19 (deep_research): Performing deep search for query: Why did America have the civil war with max results: 10
+40 2025-08-09 17:29:04: ERROR: tools.py:63 (deep_research): Deep search failed for query Why did America have the civil war: cannot access local variable 'response_text' where it is not associated with a value
+20 2025-08-09 17:35:11: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:35:11: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:35:11: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:35:56: INFO: tools.py:19 (deep_research): Performing deep search for query: Why did America have the civil war with max results: 10
+40 2025-08-09 17:35:56: ERROR: tools.py:58 (deep_research): Deep search failed for query Why did America have the civil war: cannot access local variable 'response_text' where it is not associated with a value
+20 2025-08-09 17:37:04: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:37:04: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:37:04: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:38:36: INFO: tools.py:19 (deep_research): Performing deep search for query: Why did Germany fight WWII with max results: 10
+40 2025-08-09 17:38:36: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: {}
+40 2025-08-09 17:38:36: ERROR: tools.py:58 (deep_research): Deep search failed for query Why did Germany fight WWII: 'dict' object has no attribute 'strip'
+20 2025-08-09 17:39:41: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:39:41: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:39:41: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:40:46: INFO: tools.py:19 (deep_research): Performing deep search for query: Why did Germany fight WWII with max results: 10
+40 2025-08-09 17:40:46: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+20 2025-08-09 17:40:46: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Why did Germany fight WWII
+40 2025-08-09 17:40:46: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+did+Germany+fight+WWII&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:40:47: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:40:47: INFO: search.py:223 (async_brave_search): brave_search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:40:47: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:40:47: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:40:47: INFO: search.py:223 (async_brave_search): brave_search completed for query: Why did Germany fight WWII
+40 2025-08-09 17:40:47: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+did+Germany+fight+WWII&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:40:48: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:40:48: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:40:48: INFO: search.py:223 (async_brave_search): brave_search completed for query: Why did Germany fight WWII
+40 2025-08-09 17:40:48: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+did+Germany+fight+WWII&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:40:48: INFO: tools.py:54 (deep_research): Deep search completed for query: Why did Germany fight WWII
+20 2025-08-09 17:43:15: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:43:15: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:43:15: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:45:08: INFO: tools.py:19 (deep_research): Performing deep search for query: Why Germany Fought World War II with max results: 10
+40 2025-08-09 17:45:08: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+20 2025-08-09 17:45:08: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Why Germany Fought World War II
+40 2025-08-09 17:45:08: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+Germany+Fought+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:45:09: INFO: search.py:223 (async_brave_search): brave_search completed for query: Why Germany Fought World War II
+20 2025-08-09 17:45:09: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Why Germany Fought World War II
+20 2025-08-09 17:45:09: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Why Germany Fought World War II
+20 2025-08-09 17:45:09: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Why Germany Fought World War II
+20 2025-08-09 17:45:09: INFO: search.py:223 (async_brave_search): brave_search completed for query: Why Germany Fought World War II
+40 2025-08-09 17:45:10: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+Germany+Fought+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:45:10: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Why Germany Fought World War II
+20 2025-08-09 17:45:10: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Why Germany Fought World War II
+20 2025-08-09 17:45:10: INFO: search.py:223 (async_brave_search): brave_search completed for query: Why Germany Fought World War II
+40 2025-08-09 17:45:11: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Why+Germany+Fought+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+40 2025-08-09 17:45:11: ERROR: tools.py:58 (deep_research): Deep search failed for query Why Germany Fought World War II: 'str' object is not callable
+20 2025-08-09 17:55:09: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:55:09: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:55:09: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:55:19: INFO: tools.py:19 (deep_research): Performing deep search for query: Hitler's aggressive expansionist policies leading to World War II with max results: 10
+40 2025-08-09 17:55:19: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+20 2025-08-09 17:55:19: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:55:19: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hitler%27s+aggressive+expansionist+policies+leading+to+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:55:20: INFO: search.py:223 (async_brave_search): brave_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:55:20: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:55:20: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:55:20: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hitler%27s+aggressive+expansionist+policies+leading+to+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:55:20: INFO: search.py:223 (async_brave_search): brave_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:55:20: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:55:21: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:55:21: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:55:21: INFO: search.py:223 (async_brave_search): brave_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:55:21: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hitler%27s+aggressive+expansionist+policies+leading+to+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+40 2025-08-09 17:55:21: ERROR: tools.py:58 (deep_research): Deep search failed for query Hitler's aggressive expansionist policies leading to World War II: 'str' object is not callable
+20 2025-08-09 17:56:22: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:56:22: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:56:22: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 17:56:47: INFO: tools.py:19 (deep_research): Performing deep search for query: Hitler's aggressive expansionist policies leading to World War II with max results: 10
+40 2025-08-09 17:56:47: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+20 2025-08-09 17:56:47: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:56:48: INFO: search.py:223 (async_brave_search): brave_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:56:48: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hitler%27s+aggressive+expansionist+policies+leading+to+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:56:48: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:56:48: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:56:48: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:56:48: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hitler%27s+aggressive+expansionist+policies+leading+to+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:56:48: INFO: search.py:223 (async_brave_search): brave_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:56:48: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+20 2025-08-09 17:56:49: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:56:49: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Hitler%27s+aggressive+expansionist+policies+leading+to+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 17:56:49: INFO: search.py:223 (async_brave_search): brave_search completed for query: Hitler's aggressive expansionist policies leading to World War II
+40 2025-08-09 17:56:49: ERROR: tools.py:58 (deep_research): Deep search failed for query Hitler's aggressive expansionist policies leading to World War II: 'str' object is not callable
+20 2025-08-09 17:59:09: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 17:59:10: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 17:59:10: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 18:01:23: INFO: tools.py:19 (deep_research): Performing deep search for query: New York Islanders Stanley Cup with max results: 10
+40 2025-08-09 18:01:23: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+40 2025-08-09 18:01:23: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=New+York+Islanders+Stanley+Cup&page=1
+20 2025-08-09 18:01:23: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: New York Islanders Stanley Cup
+40 2025-08-09 18:01:23: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=New+York+Islanders+Stanley+Cup&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:01:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: New York Islanders Stanley Cup
+40 2025-08-09 18:01:24: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=New+York+Islanders+Stanley+Cup&page=1
+20 2025-08-09 18:01:24: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: New York Islanders Stanley Cup
+20 2025-08-09 18:01:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: New York Islanders Stanley Cup
+40 2025-08-09 18:01:24: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=New+York+Islanders+Stanley+Cup&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:01:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: New York Islanders Stanley Cup
+40 2025-08-09 18:01:24: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=New+York+Islanders+Stanley+Cup&page=1
+20 2025-08-09 18:01:25: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: New York Islanders Stanley Cup
+40 2025-08-09 18:01:25: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=New+York+Islanders+Stanley+Cup&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:01:25: INFO: tools.py:54 (deep_research): Deep search completed for query: New York Islanders Stanley Cup
+20 2025-08-09 18:03:45: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of the Battle of Kettle Creek in Georgia with max results: 5
+40 2025-08-09 18:03:45: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+40 2025-08-09 18:03:45: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=What+is+the+history+of+the+Battle+of+Kettle+Creek+in+Georgia&page=1
+20 2025-08-09 18:03:45: INFO: search.py:193 (async_semantic_scholar_search): semantic_scholar_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:03:47: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:03:47: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:03:47: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+40 2025-08-09 18:03:47: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 429 Client Error:  for url: https://api.semanticscholar.org/graph/v1/paper/search?query=What+is+the+history+of+the+Battle+of+Kettle+Creek+in+Georgia&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+40 2025-08-09 18:03:47: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=What+is+the+history+of+the+Battle+of+Kettle+Creek+in+Georgia&page=1
+20 2025-08-09 18:03:47: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:03:48: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:03:48: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+40 2025-08-09 18:03:48: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=What+is+the+history+of+the+Battle+of+Kettle+Creek+in+Georgia&page=1
+20 2025-08-09 18:03:48: INFO: search.py:193 (async_semantic_scholar_search): semantic_scholar_search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:03:48: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of the Battle of Kettle Creek in Georgia
+20 2025-08-09 18:04:23: INFO: tools.py:19 (deep_research): Performing deep search for query: Kettle Creek battlefield American Revolutionary War with max results: 5
+40 2025-08-09 18:04:23: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+40 2025-08-09 18:04:23: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Kettle+Creek+battlefield+American+Revolutionary+War&page=1
+20 2025-08-09 18:04:24: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Kettle Creek battlefield American Revolutionary War
+40 2025-08-09 18:04:24: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Kettle+Creek+battlefield+American+Revolutionary+War&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:04:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Kettle Creek battlefield American Revolutionary War
+20 2025-08-09 18:04:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Kettle Creek battlefield American Revolutionary War
+40 2025-08-09 18:04:24: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Kettle+Creek+battlefield+American+Revolutionary+War&page=1
+20 2025-08-09 18:04:24: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Kettle Creek battlefield American Revolutionary War
+40 2025-08-09 18:04:25: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Kettle+Creek+battlefield+American+Revolutionary+War&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:04:25: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: Kettle Creek battlefield American Revolutionary War
+20 2025-08-09 18:04:25: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: Kettle Creek battlefield American Revolutionary War
+40 2025-08-09 18:04:25: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Kettle+Creek+battlefield+American+Revolutionary+War&page=1
+40 2025-08-09 18:04:25: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=Kettle+Creek+battlefield+American+Revolutionary+War&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:04:25: INFO: tools.py:54 (deep_research): Deep search completed for query: Kettle Creek battlefield American Revolutionary War
+20 2025-08-09 18:08:19: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 18:08:19: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 18:08:19: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 18:09:04: INFO: tools.py:19 (deep_research): Performing deep search for query: When and why did Poland enter World War II with max results: 5
+40 2025-08-09 18:09:04: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+40 2025-08-09 18:09:04: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=When+and+why+did+Poland+enter+World+War+II&page=1
+20 2025-08-09 18:09:04: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II
+40 2025-08-09 18:09:04: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:09:05: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: When and why did Poland enter World War II
+20 2025-08-09 18:09:05: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: When and why did Poland enter World War II
+40 2025-08-09 18:09:05: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=When+and+why+did+Poland+enter+World+War+II&page=1
+20 2025-08-09 18:09:05: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II
+40 2025-08-09 18:09:05: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:09:05: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: When and why did Poland enter World War II
+40 2025-08-09 18:09:05: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=When+and+why+did+Poland+enter+World+War+II&page=1
+20 2025-08-09 18:09:06: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II
+40 2025-08-09 18:09:06: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+40 2025-08-09 18:09:06: ERROR: tools.py:58 (deep_research): Deep search failed for query When and why did Poland enter World War II: can only concatenate str (not "list") to str
+20 2025-08-09 18:10:32: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 18:10:32: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 18:10:32: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 18:10:57: INFO: tools.py:19 (deep_research): Performing deep search for query: When and why did Poland enter World War II? with max results: 5
+40 2025-08-09 18:10:57: ERROR: ollama.py:24 (generate_search_queries): Failed to parse Ollama response: 
+40 2025-08-09 18:10:57: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=When+and+why+did+Poland+enter+World+War+II%3F&page=1
+40 2025-08-09 18:10:58: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II%3F&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:10:58: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II?
+20 2025-08-09 18:10:59: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: When and why did Poland enter World War II?
+20 2025-08-09 18:10:59: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: When and why did Poland enter World War II?
+40 2025-08-09 18:10:59: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=When+and+why+did+Poland+enter+World+War+II%3F&page=1
+20 2025-08-09 18:10:59: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II?
+40 2025-08-09 18:10:59: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II%3F&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:10:59: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: When and why did Poland enter World War II?
+40 2025-08-09 18:10:59: ERROR: search.py:226 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=When+and+why+did+Poland+enter+World+War+II%3F&page=1
+20 2025-08-09 18:10:59: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II?
+40 2025-08-09 18:10:59: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II%3F&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 18:10:59: INFO: tools.py:54 (deep_research): Deep search completed for query: When and why did Poland enter World War II?

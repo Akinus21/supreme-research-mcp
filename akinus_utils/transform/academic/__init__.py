@@ -1,3 +1,3 @@
-from .references import apa, mla
+from . import references
 
-__all__ = ["apa", "mla"]
+__all__ = [ "references" ]

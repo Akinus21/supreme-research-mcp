@@ -21,6 +21,8 @@ dependencies = [
     "arxiv>=2.2.0",
     "beautifulsoup4>=4.13.4",
     "brotli>=1.1.0",
+    "scholarly>=1.7.11",
+    "ollama>=0.5.3",
 ]
 
 [project.scripts]
