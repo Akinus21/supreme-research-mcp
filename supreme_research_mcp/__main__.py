@@ -1,5 +1,5 @@
 import asyncio
-from supreme_research_mcp.utils import update
+from utils import update
 
 def main():
     # Run update check at start (non-blocking if you want, or blocking)

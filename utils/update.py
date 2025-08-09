@@ -10,11 +10,22 @@ import zipfile
 from pathlib import Path
 from packaging import version
 import platform
+import pathlib
 
 from .logger import log
 
 BASE_DIR = Path(__file__).resolve().parent.parent  # supreme_research_mcp folder
-PYPROJECT_PATH = BASE_DIR / "pyproject.toml"
+def find_pyproject():
+    cwd = pathlib.Path.cwd()
+    for parent in [cwd] + list(cwd.parents):
+        candidate = parent / "pyproject.toml"
+        if candidate.is_file():
+            return candidate
+    return None
+
+PYPROJECT_PATH = find_pyproject()
+if PYPROJECT_PATH is None:
+    raise FileNotFoundError("Could not find pyproject.toml in current or parent dirs")
 
 # Change this to your main app's CLI module name for restart command
 APP_ENTRYPOINT = "supreme_research_mcp"  # <<< REPLACE this with your actual main app module name
@@ -40,7 +51,7 @@ def notify(title: str, message: str):
         print(f"{title}: {message}")
 
 
-def get_repo_info():
+async def get_repo_info():
     try:
         with open(PYPROJECT_PATH) as f:
             pyproject = toml.load(f)
@@ -64,7 +75,7 @@ def get_repo_info():
         return repo_owner, repo_name
 
     except Exception as e:
-        asyncio.run(log("ERROR", "update.py", f"Failed to parse pyproject.toml for repo info: {e}"))
+        await log("ERROR", "update.py", f"Failed to parse pyproject.toml for repo info: {e}")
         print(f"Warning: Could not parse repository info from pyproject.toml. Using fallback values. Error: {e}")
         return "unknown_owner", "unknown_repo"
 
@@ -79,7 +90,7 @@ def get_local_version():
         return None
 
 
-def get_latest_release(repo_owner, repo_name):
+async def get_latest_release(repo_owner, repo_name):
     url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
     try:
         response = requests.get(url)
@@ -88,7 +99,7 @@ def get_latest_release(repo_owner, repo_name):
         latest_ver = data["tag_name"].lstrip("v")
         return latest_ver, data
     except Exception as e:
-        asyncio.run(log("ERROR", "update.py", f"Failed to get latest release info: {e}"))
+        await log("ERROR", "update.py", f"Failed to get latest release info: {e}")
         return None, None
 
 
@@ -150,11 +161,11 @@ def restart_app():
 
 async def perform_update():
     repo_root = BASE_DIR
-    repo_owner, repo_name = get_repo_info()
+    repo_owner, repo_name = await get_repo_info()
     await log("INFO", "update.py", f"Starting update check for {repo_owner}/{repo_name}...")
 
     local_ver = get_local_version()
-    latest_ver, release_data = get_latest_release(repo_owner, repo_name)
+    latest_ver, release_data = await get_latest_release(repo_owner, repo_name)
 
     if not local_ver or not latest_ver:
         await log("WARNING", "update.py", "Could not determine versions, skipping update.")
