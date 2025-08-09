@@ -1,12 +1,12 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "supreme_research_mcp"
 version = "0.1.0"
 authors = [
-    { name = "Akinus21", email = "akinus.21.dev@gmail.com" }
+    {name = "Akinus21"}
 ]
 description = "A Hello World CLI using uv"
 readme = "README.md"
@@ -17,11 +17,12 @@ dependencies = [
     "packaging",
     "win10toast; sys_platform == 'win32'",
 ]
-packages = ["supreme_research_mcp"]  # <- Explicitly specify your package
-
-[tool.setuptools.packages.find]
-where = ["supreme_research_mcp"] 
 
 [project.scripts]
 supreme_research_mcp = "supreme_research_mcp.__main__:main"
 supreme_research_mcp_update = "supreme_research_mcp.utils.update:main"
+
+# Use setuptools package discovery here:
+[tool.setuptools.packages.find]
+where = ["."]
+exclude = ["tests*"]
