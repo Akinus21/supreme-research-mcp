@@ -3,31 +3,34 @@ from typing import List, Dict, Any
 from utils.logger import local as log
 import arxiv
 
-
 # --------------------
 # arXiv Search
 # --------------------
 def arxiv_search(query: str, limit: int = 5):
-    search = arxiv.Search(
-        query=query,
-        max_results=limit,
-        sort_by=arxiv.SortCriterion.Relevance,
-        sort_order=arxiv.SortOrder.Descending
-    )
-    results = []
-    for result in search.results():
-        authors = [author.name for author in result.authors]
-        year = result.published.year if result.published else None
-        results.append({
-            "title": result.title,
-            "authors": authors,
-            "year": year,
-            "journal": "arXiv preprint",
-            "doi": result.doi,
-            "url": result.pdf_url,
-            "abstract": result.summary
-        })
-    return results
+    try:
+        search = arxiv.Search(
+            query=query,
+            max_results=limit,
+            sort_by=arxiv.SortCriterion.Relevance,
+            sort_order=arxiv.SortOrder.Descending
+        )
+        results = []
+        for result in search.results():
+            authors = [author.name for author in result.authors]
+            year = result.published.year if result.published else None
+            results.append({
+                "title": result.title,
+                "authors": authors,
+                "year": year,
+                "journal": "arXiv preprint",
+                "doi": result.doi,
+                "url": result.pdf_url,
+                "abstract": result.summary
+            })
+        return results
+    except Exception as e:
+        # Raise to let async_arxiv_search handle/log it
+        raise e
 
 
 # --------------------

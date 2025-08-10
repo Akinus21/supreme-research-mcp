@@ -23,6 +23,7 @@ dependencies = [
     "brotli>=1.1.0",
     "scholarly>=1.7.11",
     "ollama>=0.5.3",
+    "nest-asyncio>=1.6.0",
 ]
 
 [project.scripts]

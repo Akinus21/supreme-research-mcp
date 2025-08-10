@@ -1,12 +1,12 @@
-
+# supreme_research_mcp/search.py
 import asyncio
-from utils.app_details import PROJECT_ROOT
+from typing import Any
 from utils.logger import local as log
 from supreme_research_mcp.ollama import generate_search_queries
 import json
 import re
 from utils.web.search.crossref import async_crossref_search
-from utils.web.search.open_alex import async_openalex_search
+from utils.web.search.openalex import async_openalex_search
 from utils.web.search.brave import async_brave_search
 from utils.web.search.core import async_core_search
 from utils.web.search.arxiv import async_arxiv_search
@@ -19,6 +19,7 @@ def sanitize_query(query: str) -> str:
     query = re.sub(r"[`\"'\n\r]", " ", query)
     query = re.sub(r"\s+", " ", query).strip()
     return query
+
 
 async def generate_search_queries(original_query: str) -> list[str]:
     prompt = f"""
@@ -97,8 +98,28 @@ async def run_all_searches(query: str, max_results: int = 5) -> dict:
 
 
 async def run_deep_search(original_query: str, max_results_per_query: int = 20):
-    queries = await generate_search_queries(original_query)
+    """
+    Expands the original query into multiple focused queries using Ollama,
+    then runs all search engines for each query, merges and deduplicates results,
+    and returns a single combined dataset.
+    """
+    def safe_key(item: dict) -> str:
+        return item.get("doi") or f"{item.get('title', '')}_{item.get('year', '')}"
+
+    def safe_str(val: Any, source: str, field: str) -> str:
+        if val is None:
+            return ""
+        if isinstance(val, dict):
+            log.warning(f"[run_deep_search] {source} returned dict for {field}: {val}")
+            return val.get("text", "") or str(val)
+        return str(val)
+
+    merged_references = {}
+    merged_text_results = []
     all_results = []
+
+    queries = await generate_search_queries(original_query)
+
     try:
         for q in queries:
             result = await run_all_searches(q, max_results_per_query)
@@ -106,6 +127,32 @@ async def run_deep_search(original_query: str, max_results_per_query: int = 20):
                 "query": q,
                 **result,
             })
-        return all_results
+
+            # Merge references & text
+            for source_name in ["crossref", "arxiv", "brave", "openalex", "core"]:
+                for ref in result.get(source_name, []):
+                    key = safe_key(ref)
+                    if key not in merged_references:
+                        merged_references[key] = ref
+                        abstract = safe_str(ref.get("abstract"), source_name, "abstract")
+                        snippet = safe_str(ref.get("snippet"), source_name, "snippet")
+                        title = safe_str(ref.get("title"), source_name, "title")
+
+                        if abstract.strip():
+                            merged_text_results.append(abstract.strip())
+                        elif snippet.strip():
+                            merged_text_results.append(snippet.strip())
+                        elif title.strip():
+                            merged_text_results.append(title.strip())
+
+        return {
+            "original_query": original_query,
+            "queries": queries,
+            "results_by_query": all_results,
+            "merged_references": merged_references,
+            "merged_text_results": merged_text_results,
+        }
+
     except Exception as e:
         raise RuntimeError(f"run_deep_search failed: {e}")
+

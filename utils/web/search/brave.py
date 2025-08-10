@@ -8,7 +8,7 @@ import time
 # --------------------
 # Brave Search
 # --------------------
-def brave_search(query: str, limit: int = 5):
+def brave_search(query: str, limit: int = 5, max_retries: int = 5, backoff_factor: float = 1.0) -> List[Dict[str, Any]]:
     base_url = "https://search.brave.com/search"
     params = {"q": query, "page": 1}
     headers = {
@@ -18,33 +18,55 @@ def brave_search(query: str, limit: int = 5):
 
     results = []
     while len(results) < limit:
-        response = requests.get(base_url, params=params, headers=headers)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.text, "html.parser")
+        attempt = 0
+        while attempt <= max_retries:
+            try:
+                response = requests.get(base_url, params=params, headers=headers)
+                if response.status_code == 429:
+                    # Too Many Requests - retry after backoff
+                    wait_time = backoff_factor * (2 ** attempt)
+                    attempt += 1
+                    time.sleep(wait_time)
+                    continue
+                response.raise_for_status()
 
-        items = soup.select("div[data-testid='result']")
-        if not items:
-            break
+                soup = BeautifulSoup(response.text, "html.parser")
+                items = soup.select("div[data-testid='result']")
+                if not items:
+                    # No results found - break out of the retry loop & pagination
+                    return results
 
-        for item in items:
-            if len(results) >= limit:
+                for item in items:
+                    if len(results) >= limit:
+                        break
+                    title_tag = item.select_one("a[data-testid='result-title-a']")
+                    desc_tag = item.select_one("p[data-testid='result-snippet']")
+                    url = title_tag['href'] if title_tag else None
+                    title = title_tag.get_text(strip=True) if title_tag else None
+                    snippet = desc_tag.get_text(strip=True) if desc_tag else None
+                    results.append({
+                        "title": title,
+                        "authors": [],
+                        "year": None,
+                        "journal": None,
+                        "doi": None,
+                        "url": url,
+                        "abstract": snippet
+                    })
+
+                # Success, break retry loop to go to next page
                 break
-            title_tag = item.select_one("a[data-testid='result-title-a']")
-            desc_tag = item.select_one("p[data-testid='result-snippet']")
-            url = title_tag['href'] if title_tag else None
-            title = title_tag.get_text(strip=True) if title_tag else None
-            snippet = desc_tag.get_text(strip=True) if desc_tag else None
-            results.append({
-                "title": title,
-                "authors": [],
-                "year": None,
-                "journal": None,
-                "doi": None,
-                "url": url,
-                "abstract": snippet
-            })
+
+            except requests.RequestException as e:
+                # For network-related errors or others, retry with backoff
+                attempt += 1
+                if attempt > max_retries:
+                    raise  # Raise if max retries exceeded
+                wait_time = backoff_factor * (2 ** (attempt - 1))
+                time.sleep(wait_time)
+
         params["page"] += 1
-        time.sleep(1)
+
     return results
 
 # --------------------

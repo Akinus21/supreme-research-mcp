@@ -1,4 +1,4 @@
-from utils.web.server import mcp
+from utils.web.server.mcp import mcp
 from utils.logger import local as log
 from supreme_research_mcp.search import run_deep_search
 from utils.transform.academic import references as refs

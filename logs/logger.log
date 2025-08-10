@@ -691,3 +691,43 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 20 2025-08-09 21:14:25: INFO: search.py:222 (async_arxiv_search): arxiv_search completed for query: roots and evolution of new york state
 20 2025-08-09 21:14:28: INFO: search.py:249 (async_core_search): core_search completed for query: roots and evolution of new york state
 40 2025-08-09 21:14:28: ERROR: tools.py:58 (deep_research): Deep search failed for query What is the history of New York?: sequence item 0: expected str instance, dict found
+20 2025-08-09 22:05:28: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 22:05:28: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 22:05:28: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 22:05:28: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 22:05:31: INFO: openalex.py:40 (async_openalex_search): openalex_search completed for query: Explore the rich historical journey of New York City
+20 2025-08-09 22:05:31: INFO: crossref.py:57 (async_crossref_search): crossref_search completed for query: Explore the rich historical journey of New York City
+40 2025-08-09 22:05:31: ERROR: brave.py:59 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Explore+the+rich+historical+journey+of+New+York+City&page=1
+20 2025-08-09 22:05:32: INFO: arxiv.py:39 (async_arxiv_search): arxiv_search completed for query: Explore the rich historical journey of New York City
+20 2025-08-09 22:05:36: INFO: core.py:63 (async_core_search): core_search completed for query: Explore the rich historical journey of New York City
+40 2025-08-09 22:05:36: ERROR: brave.py:59 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Discover+the+chronological+timeline+of+New+York%27s+development&page=1
+20 2025-08-09 22:05:36: INFO: crossref.py:57 (async_crossref_search): crossref_search completed for query: Discover the chronological timeline of New York's development
+20 2025-08-09 22:05:36: INFO: openalex.py:40 (async_openalex_search): openalex_search completed for query: Discover the chronological timeline of New York's development
+20 2025-08-09 22:05:36: INFO: arxiv.py:39 (async_arxiv_search): arxiv_search completed for query: Discover the chronological timeline of New York's development
+20 2025-08-09 22:05:38: INFO: core.py:63 (async_core_search): core_search completed for query: Discover the chronological timeline of New York's development
+40 2025-08-09 22:05:38: ERROR: brave.py:59 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=Acquire+a+comprehensive+understanding+of+New+York%27s+past&page=1
+20 2025-08-09 22:05:39: INFO: openalex.py:40 (async_openalex_search): openalex_search completed for query: Acquire a comprehensive understanding of New York's past
+20 2025-08-09 22:05:39: INFO: crossref.py:57 (async_crossref_search): crossref_search completed for query: Acquire a comprehensive understanding of New York's past
+20 2025-08-09 22:05:40: INFO: arxiv.py:39 (async_arxiv_search): arxiv_search completed for query: Acquire a comprehensive understanding of New York's past
+20 2025-08-09 22:05:41: INFO: core.py:63 (async_core_search): core_search completed for query: Acquire a comprehensive understanding of New York's past
+40 2025-08-09 22:05:41: ERROR: tools.py:92 (deep_research): Deep search failed for query What is the history of New York?: sequence item 0: expected str instance, dict found
+20 2025-08-09 22:10:04: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 22:10:04: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 22:10:04: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 22:10:04: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 22:10:05: INFO: arxiv.py:39 (async_arxiv_search): arxiv_search completed for query: history of new york
+40 2025-08-09 22:10:05: ERROR: brave.py:59 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=history+of+new+york&page=1
+20 2025-08-09 22:10:05: INFO: openalex.py:40 (async_openalex_search): openalex_search completed for query: history of new york
+20 2025-08-09 22:10:06: INFO: crossref.py:57 (async_crossref_search): crossref_search completed for query: history of new york
+20 2025-08-09 22:10:09: INFO: core.py:63 (async_core_search): core_search completed for query: history of new york
+40 2025-08-09 22:10:09: ERROR: brave.py:59 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=timeline+of+events+in+new+york&page=1
+20 2025-08-09 22:10:09: INFO: openalex.py:40 (async_openalex_search): openalex_search completed for query: timeline of events in new york
+20 2025-08-09 22:10:09: INFO: crossref.py:57 (async_crossref_search): crossref_search completed for query: timeline of events in new york
+20 2025-08-09 22:10:10: INFO: arxiv.py:39 (async_arxiv_search): arxiv_search completed for query: timeline of events in new york
+20 2025-08-09 22:10:12: INFO: core.py:63 (async_core_search): core_search completed for query: timeline of events in new york
+40 2025-08-09 22:10:12: ERROR: brave.py:59 (async_brave_search): brave_search failed: 429 Client Error: Too Many Requests for url: https://search.brave.com/search?q=origin+and+development+of+new+york+city&page=1
+20 2025-08-09 22:10:12: INFO: openalex.py:40 (async_openalex_search): openalex_search completed for query: origin and development of new york city
+20 2025-08-09 22:10:12: INFO: arxiv.py:39 (async_arxiv_search): arxiv_search completed for query: origin and development of new york city
+20 2025-08-09 22:10:12: INFO: crossref.py:57 (async_crossref_search): crossref_search completed for query: origin and development of new york city
+20 2025-08-09 22:10:15: INFO: core.py:63 (async_core_search): core_search completed for query: origin and development of new york city
+40 2025-08-09 22:10:15: ERROR: tools.py:92 (deep_research): Deep search failed for query What is the history of New York?: 'str' object has no attribute 'get'

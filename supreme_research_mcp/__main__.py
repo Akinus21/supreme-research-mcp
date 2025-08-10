@@ -1,7 +1,7 @@
 import sys
 import asyncio
 from utils import update
-from utils.web.server import mcp
+from utils.web.server.mcp import mcp
 import supreme_research_mcp.tools as tools
 
 async def run_query(query: str):
