@@ -1,9 +1,9 @@
-# server.py
-from akinus_utils.app_details import APP_NAME
+# mcp.py
+from utils.app_details import APP_NAME
 from mcp.server.fastmcp import FastMCP
 
 # Create the shared MCP server instance
-mcp = FastMCP("Supreme Research MCP Server")
+mcp = FastMCP(APP_NAME)
 
 # Wrap the original decorator to add CLI tagging
 _original_tool_decorator = mcp.tool

@@ -1,11 +1,11 @@
-from web.server import mcp
-from akinus_utils.logger import local as log
+from utils.web.server import mcp
+from utils.logger import local as log
 from supreme_research_mcp.search import run_deep_search
-from supreme_research_mcp.record_research import write_data
-from akinus_utils.transform.academic import references as refs
+from utils.transform.academic import references as refs
+from utils.app_details import PROJECT_ROOT
 
 @mcp.tool()
-async def deep_research(query: str, max_results: int = 10) -> list:
+async def deep_research(query: str, max_results: int = 10) -> dict:
     """
     Perform a deep search on the web for the given query.
     
@@ -14,21 +14,41 @@ async def deep_research(query: str, max_results: int = 10) -> list:
         max_results (int): Maximum number of results to return.
     
     Returns:
-        list: A list of search results.
+        dict: Contains concatenated text results and formatted references.
     """
     await log("INFO", "tools.py", f"Performing deep search for query: {query} with max results: {max_results}")
-    
+
     try:
         deep_search_results = await run_deep_search(query)
-        # Example: combine all text results from all queries
+
         all_texts = []
         all_refs = {}
 
+        # Normalize search results
         for result in deep_search_results:
-            all_texts.extend(result["text_results"])
-            all_refs.update(result["references"])
+            raw_texts = result.get("text_results", [])
+            if raw_texts:
+                normalized_texts = []
+                for item in raw_texts:
+                    if isinstance(item, dict):
+                        title = item.get("title", "").strip()
+                        snippet = item.get("snippet", "").strip()
+                        url = item.get("url", "").strip()
+                        combined = " - ".join(filter(None, [title, snippet]))
+                        if url:
+                            combined += f" ({url})"
+                        if combined:
+                            normalized_texts.append(combined)
+                    else:
+                        normalized_texts.append(str(item).strip())
+                all_texts.extend(t for t in normalized_texts if t)
 
-        # Format references
+            # Merge references
+            refs_dict = result.get("references", {})
+            if isinstance(refs_dict, dict):
+                all_refs.update(refs_dict)
+
+        # Format references safely
         formatted_references = []
         for item in all_refs.values():
             ref_data = {
@@ -39,16 +59,30 @@ async def deep_research(query: str, max_results: int = 10) -> list:
                 "publisher": "",
                 "url": item.get("url", ""),
             }
-            formatted = await refs.apa(ref_data)
-            formatted_references.append(formatted)
+            try:
+                formatted = await refs.apa(ref_data)
+                formatted_references.append(formatted)
+            except Exception as e:
+                await log("ERROR", "tools.py", f"Reference formatting failed: {e}")
 
-        # Write to file
-        data = f"{"\n\n".join(all_texts)}" + f"\n\n" + f"{"\n\n".join(formatted_references)}"
-        write_data(f"{data}")
+        # Prepare output
+        all_text_str = "\n\n".join(all_texts)
+        all_refs_str = "\n\n".join(formatted_references)
+
+        # Write to file for record-keeping
+        data_to_write = f"{all_text_str}\n\n{all_refs_str}"
+        write_data(data_to_write)
 
         results = {
-            "text_results": f"The user wants you to summarize the following text to answer the query:\n" + "\n".join(all_texts),
-            "formatted_references": f"Use these formatted references to provide the user the means to do their own research after you have provided your answer.\n" + "\n".join(formatted_references),
+            "text_results": (
+                "The user wants you to summarize the following text to answer the query:\n" +
+                all_text_str
+            ),
+            "formatted_references": (
+                "Use these formatted references to provide the user the means to do their own research "
+                "after you have provided your answer.\n" +
+                all_refs_str
+            ),
         }
 
         await log("INFO", "tools.py", f"Deep search completed for query: {query}")
@@ -57,4 +91,13 @@ async def deep_research(query: str, max_results: int = 10) -> list:
     except Exception as e:
         await log("ERROR", "tools.py", f"Deep search failed for query {query}: {e}")
         print(f"Deep search failed: {e}")
-        return []
+        return {}
+
+def write_data(data):
+    DATA_DIR = PROJECT_ROOT / "data"
+    DATA_FILE = DATA_DIR / "data.txt"
+
+    # Ensure data directory exists
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    with open(DATA_FILE, 'w') as file:
+        file.write(data)

@@ -6,7 +6,7 @@ from pathlib import Path
 from datetime import datetime
 import inspect
 
-from akinus_utils.app_details import PROJECT_ROOT
+from utils.app_details import PROJECT_ROOT
 
 # Local file logging setup
 

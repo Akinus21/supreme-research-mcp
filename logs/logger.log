@@ -421,3 +421,273 @@
 20 2025-08-09 18:10:59: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: When and why did Poland enter World War II?
 40 2025-08-09 18:10:59: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=When+and+why+did+Poland+enter+World+War+II%3F&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
 20 2025-08-09 18:10:59: INFO: tools.py:54 (deep_research): Deep search completed for query: When and why did Poland enter World War II?
+20 2025-08-09 20:31:14: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:31:14: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:31:14: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:34:27: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:34:28: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:34:28: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:34:53: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:34:53: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:34:53: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:35:58: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:35:59: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:35:59: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:36:20: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:36:20: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:36:20: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+40 2025-08-09 20:36:23: ERROR: ollama.py:35 (generate_search_queries): Failed to parse Ollama response: ```json
+[
+    "Explore the historical development of New York",
+    "Analyze the timeline of events in New York's past",
+    "Study the progression of important periods in the city's history"
+]
+``` | Error: Expecting value: line 1 column 1 (char 0)
+20 2025-08-09 20:36:23: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: ```json
+20 2025-08-09 20:36:23: INFO: search.py:223 (async_brave_search): brave_search completed for query: ```json
+40 2025-08-09 20:36:23: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%60%60%60json&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 20:36:23: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: ```json
+20 2025-08-09 20:36:24: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: [
+20 2025-08-09 20:36:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: [
+20 2025-08-09 20:36:24: INFO: search.py:193 (async_semantic_scholar_search): semantic_scholar_search completed for query: [
+20 2025-08-09 20:36:24: INFO: search.py:223 (async_brave_search): brave_search completed for query: [
+20 2025-08-09 20:36:24: INFO: search.py:203 (async_crossref_search): crossref_search completed for query: "Explore the historical development of New York",
+20 2025-08-09 20:36:24: INFO: search.py:213 (async_arxiv_search): arxiv_search completed for query: "Explore the historical development of New York",
+20 2025-08-09 20:36:25: INFO: search.py:223 (async_brave_search): brave_search completed for query: "Explore the historical development of New York",
+40 2025-08-09 20:36:25: ERROR: search.py:196 (async_semantic_scholar_search): semantic_scholar_search failed: 400 Client Error: Bad Request for url: https://api.semanticscholar.org/graph/v1/paper/search?query=%22Explore+the+historical+development+of+New+York%22%2C&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi
+20 2025-08-09 20:38:45: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:38:45: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:38:45: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+40 2025-08-09 20:38:46: ERROR: ollama.py:34 (generate_search_queries): Failed to parse Ollama response: ```json
+["Historical development of New York City"]
+["Chronology of events in New York State's past"]
+["Early history and origins of New York"]
+```
+20 2025-08-09 20:38:46: INFO: search.py:206 (async_crossref_search): crossref_search completed for query: ```json
+20 2025-08-09 20:38:46: INFO: search.py:216 (async_arxiv_search): arxiv_search completed for query: ```json
+20 2025-08-09 20:38:46: INFO: search.py:226 (async_brave_search): brave_search completed for query: ```json
+20 2025-08-09 20:38:46: INFO: search.py:216 (async_arxiv_search): arxiv_search completed for query: ["Historical development of New York City"]
+20 2025-08-09 20:38:46: INFO: search.py:206 (async_crossref_search): crossref_search completed for query: ["Historical development of New York City"]
+20 2025-08-09 20:38:47: INFO: search.py:226 (async_brave_search): brave_search completed for query: ["Historical development of New York City"]
+20 2025-08-09 20:38:47: INFO: search.py:216 (async_arxiv_search): arxiv_search completed for query: ["Chronology of events in New York State's past"]
+20 2025-08-09 20:38:47: INFO: search.py:206 (async_crossref_search): crossref_search completed for query: ["Chronology of events in New York State's past"]
+20 2025-08-09 20:38:48: INFO: search.py:226 (async_brave_search): brave_search completed for query: ["Chronology of events in New York State's past"]
+20 2025-08-09 20:42:44: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:42:44: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:42:44: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+40 2025-08-09 20:42:44: ERROR: ollama.py:34 (generate_search_queries): Failed to parse Ollama response: ```json
+[
+    "historical overview of new york city",
+    "timeline of events in new york state",
+    "migration patterns to new york over time"
+]
+```
+20 2025-08-09 20:42:45: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: ```json
+20 2025-08-09 20:42:45: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: ```json
+20 2025-08-09 20:42:45: INFO: search.py:246 (async_brave_search): brave_search completed for query: ```json
+40 2025-08-09 20:42:45: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=%60%60%60json&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:42:45: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: [
+20 2025-08-09 20:42:45: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: [
+20 2025-08-09 20:42:46: INFO: search.py:246 (async_brave_search): brave_search completed for query: [
+20 2025-08-09 20:42:46: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: historical overview of new york city
+20 2025-08-09 20:42:46: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: historical overview of new york city
+20 2025-08-09 20:42:47: INFO: search.py:246 (async_brave_search): brave_search completed for query: historical overview of new york city
+40 2025-08-09 20:42:47: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=historical+overview+of+new+york+city&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:45:35: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:45:35: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:45:35: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:45:35: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+40 2025-08-09 20:45:35: ERROR: ollama.py:34 (generate_search_queries): Failed to parse Ollama response: ```json
+[
+    "History of New York since its founding",
+    "Timeline of significant events in New York's past",
+    "Archival records and historical documents on the development of New York"
+]
+```
+20 2025-08-09 20:45:36: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: ```json
+20 2025-08-09 20:45:36: INFO: search.py:246 (async_brave_search): brave_search completed for query: ```json
+40 2025-08-09 20:45:36: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=%60%60%60json&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:45:36: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: ```json
+20 2025-08-09 20:45:36: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: [
+20 2025-08-09 20:45:36: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: [
+20 2025-08-09 20:45:36: INFO: search.py:246 (async_brave_search): brave_search completed for query: [
+20 2025-08-09 20:45:37: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: History of New York since its founding
+20 2025-08-09 20:45:38: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: History of New York since its founding
+20 2025-08-09 20:45:38: INFO: search.py:246 (async_brave_search): brave_search completed for query: History of New York since its founding
+40 2025-08-09 20:45:38: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=History+of+New+York+since+its+founding&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:45:38: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 20:50:38: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:50:38: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:50:38: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:50:38: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+40 2025-08-09 20:50:41: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '429 ' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=Historical+background+of+New+York+City&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+20 2025-08-09 20:50:41: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: Historical background of New York City
+20 2025-08-09 20:50:42: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: Historical background of New York City
+20 2025-08-09 20:50:42: INFO: search.py:246 (async_brave_search): brave_search completed for query: Historical background of New York City
+40 2025-08-09 20:50:42: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '429 ' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=The+development+of+New+York+through+time&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+20 2025-08-09 20:50:42: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: The development of New York through time
+20 2025-08-09 20:50:43: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: The development of New York through time
+20 2025-08-09 20:50:43: INFO: search.py:246 (async_brave_search): brave_search completed for query: The development of New York through time
+40 2025-08-09 20:50:43: ERROR: search.py:218 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '429 ' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=Timeline+of+events+in+New+York%27s+past&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+20 2025-08-09 20:50:43: INFO: search.py:226 (async_crossref_search): crossref_search completed for query: Timeline of events in New York's past
+20 2025-08-09 20:50:44: INFO: search.py:246 (async_brave_search): brave_search completed for query: Timeline of events in New York's past
+20 2025-08-09 20:50:44: INFO: search.py:236 (async_arxiv_search): arxiv_search completed for query: Timeline of events in New York's past
+20 2025-08-09 20:50:44: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 20:52:51: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:52:51: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:52:51: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:52:51: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 20:52:52: INFO: search.py:231 (async_crossref_search): crossref_search completed for query: New York City's historical timeline
+20 2025-08-09 20:52:52: INFO: search.py:241 (async_arxiv_search): arxiv_search completed for query: New York City's historical timeline
+40 2025-08-09 20:52:52: ERROR: search.py:223 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=New+York+City%27s+historical+timeline&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:52:52: INFO: search.py:251 (async_brave_search): brave_search completed for query: New York City's historical timeline
+20 2025-08-09 20:52:53: INFO: search.py:231 (async_crossref_search): crossref_search completed for query: Timeline of events in New York State history
+20 2025-08-09 20:52:53: INFO: search.py:241 (async_arxiv_search): arxiv_search completed for query: Timeline of events in New York State history
+20 2025-08-09 20:52:53: INFO: search.py:251 (async_brave_search): brave_search completed for query: Timeline of events in New York State history
+40 2025-08-09 20:52:54: ERROR: search.py:223 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=Timeline+of+events+in+New+York+State+history&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+40 2025-08-09 20:52:54: ERROR: search.py:223 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=The+history+of+New+York+through+key+milestones&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:52:54: INFO: search.py:231 (async_crossref_search): crossref_search completed for query: The history of New York through key milestones
+20 2025-08-09 20:52:55: INFO: search.py:251 (async_brave_search): brave_search completed for query: The history of New York through key milestones
+20 2025-08-09 20:52:55: INFO: search.py:241 (async_arxiv_search): arxiv_search completed for query: The history of New York through key milestones
+20 2025-08-09 20:52:55: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 20:55:41: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:55:41: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:55:41: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:55:41: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 20:55:42: INFO: search.py:241 (async_crossref_search): crossref_search completed for query: Exploring the historical development of New York City
+40 2025-08-09 20:55:43: ERROR: search.py:233 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=Exploring+the+historical+development+of+New+York+City&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:55:43: INFO: search.py:261 (async_brave_search): brave_search completed for query: Exploring the historical development of New York City
+20 2025-08-09 20:55:47: INFO: search.py:251 (async_arxiv_search): arxiv_search completed for query: Exploring the historical development of New York City
+20 2025-08-09 20:55:47: INFO: search.py:241 (async_crossref_search): crossref_search completed for query: The timeline of significant events in the history of New York
+40 2025-08-09 20:55:47: ERROR: search.py:233 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=The+timeline+of+significant+events+in+the+history+of+New+York&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:55:47: INFO: search.py:261 (async_brave_search): brave_search completed for query: The timeline of significant events in the history of New York
+20 2025-08-09 20:55:48: INFO: search.py:251 (async_arxiv_search): arxiv_search completed for query: The timeline of significant events in the history of New York
+20 2025-08-09 20:55:49: INFO: search.py:241 (async_crossref_search): crossref_search completed for query: Understanding New York's founding and evolution through the ages
+40 2025-08-09 20:55:49: ERROR: search.py:233 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=Understanding+New+York+s+founding+and+evolution+through+the+ages&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 20:55:49: INFO: search.py:261 (async_brave_search): brave_search completed for query: Understanding New York's founding and evolution through the ages
+20 2025-08-09 20:55:49: INFO: search.py:251 (async_arxiv_search): arxiv_search completed for query: Understanding New York's founding and evolution through the ages
+20 2025-08-09 20:55:49: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 20:59:06: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 20:59:06: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 20:59:06: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 20:59:06: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+40 2025-08-09 20:59:07: ERROR: search.py:215 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '405 Method Not Allowed' for url 'https://api.semanticscholar.org/graph/v1/paper/search'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
+20 2025-08-09 20:59:07: INFO: search.py:223 (async_crossref_search): crossref_search completed for query: Exploring the historical evolution of New York City
+20 2025-08-09 20:59:07: INFO: search.py:233 (async_arxiv_search): arxiv_search completed for query: Exploring the historical evolution of New York City
+20 2025-08-09 20:59:07: INFO: search.py:243 (async_brave_search): brave_search completed for query: Exploring the historical evolution of New York City
+40 2025-08-09 20:59:07: ERROR: search.py:215 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '405 Method Not Allowed' for url 'https://api.semanticscholar.org/graph/v1/paper/search'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
+20 2025-08-09 20:59:08: INFO: search.py:223 (async_crossref_search): crossref_search completed for query: Understanding the timeline of events in New York's past
+20 2025-08-09 20:59:08: INFO: search.py:243 (async_brave_search): brave_search completed for query: Understanding the timeline of events in New York's past
+20 2025-08-09 20:59:08: INFO: search.py:233 (async_arxiv_search): arxiv_search completed for query: Understanding the timeline of events in New York's past
+40 2025-08-09 20:59:08: ERROR: search.py:215 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '405 Method Not Allowed' for url 'https://api.semanticscholar.org/graph/v1/paper/search'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/405
+20 2025-08-09 20:59:09: INFO: search.py:223 (async_crossref_search): crossref_search completed for query: Delving into the chronology of New York's development
+20 2025-08-09 20:59:09: INFO: search.py:233 (async_arxiv_search): arxiv_search completed for query: Delving into the chronology of New York's development
+20 2025-08-09 20:59:09: INFO: search.py:243 (async_brave_search): brave_search completed for query: Delving into the chronology of New York's development
+20 2025-08-09 20:59:09: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 21:03:41: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 21:03:41: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 21:03:41: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 21:03:41: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 21:03:42: INFO: search.py:233 (async_arxiv_search): arxiv_search completed for query: exploring-the-history-of-new-york
+20 2025-08-09 21:03:42: INFO: search.py:223 (async_crossref_search): crossref_search completed for query: exploring-the-history-of-new-york
+20 2025-08-09 21:03:42: INFO: search.py:243 (async_brave_search): brave_search completed for query: exploring-the-history-of-new-york
+40 2025-08-09 21:03:42: ERROR: search.py:215 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=exploring-the-history-of-new-york&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+40 2025-08-09 21:03:43: ERROR: search.py:215 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '429 ' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=history-of-new-york-from-its-founders-to-present-day&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+20 2025-08-09 21:03:43: INFO: search.py:233 (async_arxiv_search): arxiv_search completed for query: history-of-new-york-from-its-founders-to-present-day
+20 2025-08-09 21:03:43: INFO: search.py:223 (async_crossref_search): crossref_search completed for query: history-of-new-york-from-its-founders-to-present-day
+20 2025-08-09 21:03:43: INFO: search.py:243 (async_brave_search): brave_search completed for query: history-of-new-york-from-its-founders-to-present-day
+40 2025-08-09 21:03:44: ERROR: search.py:215 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '429 ' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=the-origin-and-evolution-of-new-york-city&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+20 2025-08-09 21:03:44: INFO: search.py:233 (async_arxiv_search): arxiv_search completed for query: the-origin-and-evolution-of-new-york-city
+20 2025-08-09 21:03:44: INFO: search.py:223 (async_crossref_search): crossref_search completed for query: the-origin-and-evolution-of-new-york-city
+20 2025-08-09 21:03:44: INFO: search.py:243 (async_brave_search): brave_search completed for query: the-origin-and-evolution-of-new-york-city
+20 2025-08-09 21:03:44: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 21:06:16: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 21:06:16: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 21:06:16: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 21:06:16: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+30 2025-08-09 21:06:17: WARNING: search.py:219 (async_semantic_scholar_search): Rate limited by Semantic Scholar API. Retrying in 1 seconds...
+20 2025-08-09 21:06:17: INFO: search.py:232 (async_crossref_search): crossref_search completed for query: Explore the origins and development of New York throughout its rich history
+20 2025-08-09 21:06:18: INFO: search.py:252 (async_brave_search): brave_search completed for query: Explore the origins and development of New York throughout its rich history
+20 2025-08-09 21:06:18: INFO: search.py:242 (async_arxiv_search): arxiv_search completed for query: Explore the origins and development of New York throughout its rich history
+30 2025-08-09 21:06:18: WARNING: search.py:219 (async_semantic_scholar_search): Rate limited by Semantic Scholar API. Retrying in 1 seconds...
+20 2025-08-09 21:06:19: INFO: search.py:232 (async_crossref_search): crossref_search completed for query: Trace the timeline of events that have shaped the history of New York
+20 2025-08-09 21:06:19: INFO: search.py:252 (async_brave_search): brave_search completed for query: Trace the timeline of events that have shaped the history of New York
+20 2025-08-09 21:06:19: INFO: search.py:242 (async_arxiv_search): arxiv_search completed for query: Trace the timeline of events that have shaped the history of New York
+30 2025-08-09 21:06:20: WARNING: search.py:219 (async_semantic_scholar_search): Rate limited by Semantic Scholar API. Retrying in 2 seconds...
+30 2025-08-09 21:06:22: WARNING: search.py:219 (async_semantic_scholar_search): Rate limited by Semantic Scholar API. Retrying in 4 seconds...
+40 2025-08-09 21:06:26: ERROR: search.py:224 (async_semantic_scholar_search): semantic_scholar_search failed: Max retries exceeded due to rate limiting
+30 2025-08-09 21:06:26: WARNING: search.py:219 (async_semantic_scholar_search): Rate limited by Semantic Scholar API. Retrying in 1 seconds...
+20 2025-08-09 21:06:27: INFO: search.py:232 (async_crossref_search): crossref_search completed for query: Discover how New York has evolved from its early beginnings to present day
+20 2025-08-09 21:06:27: INFO: search.py:252 (async_brave_search): brave_search completed for query: Discover how New York has evolved from its early beginnings to present day
+20 2025-08-09 21:06:27: INFO: search.py:242 (async_arxiv_search): arxiv_search completed for query: Discover how New York has evolved from its early beginnings to present day
+40 2025-08-09 21:06:28: ERROR: search.py:222 (async_semantic_scholar_search): semantic_scholar_search failed: Client error '400 Bad Request' for url 'https://api.semanticscholar.org/graph/v1/paper/search?query=Discover+how+New+York+has+evolved+from+its+early+beginnings+to+present+day&limit=20&fields=paperId%2Ctitle%2Cauthors%2Cyear%2Cabstract%2Curl%2Cvenue%2Cdoi'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+20 2025-08-09 21:06:28: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 21:11:25: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 21:11:25: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 21:11:25: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 21:11:25: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 21:11:28: INFO: search.py:217 (async_crossref_search): crossref_search completed for query: history of new york
+40 2025-08-09 21:11:28: ERROR: search.py:93 (core_search): core_search failed: Redirect response '301 Moved Permanently' for url 'https://api.core.ac.uk/v3/search/works?q=history+of+new+york&page=1&pageSize=20'
+Redirect location: 'https://api.core.ac.uk/v3/search/works/?q=history+of+new+york&page=1&pageSize=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301
+20 2025-08-09 21:11:28: INFO: search.py:253 (async_core_search): core_search completed for query: history of new york
+20 2025-08-09 21:11:28: INFO: search.py:235 (async_brave_search): brave_search completed for query: history of new york
+20 2025-08-09 21:11:28: INFO: search.py:244 (async_openalex_search): openalex_search completed for query: history of new york
+20 2025-08-09 21:11:28: INFO: search.py:226 (async_arxiv_search): arxiv_search completed for query: history of new york
+20 2025-08-09 21:11:28: INFO: search.py:244 (async_openalex_search): openalex_search completed for query: timeline of events in new york city
+20 2025-08-09 21:11:29: INFO: search.py:217 (async_crossref_search): crossref_search completed for query: timeline of events in new york city
+40 2025-08-09 21:11:29: ERROR: search.py:93 (core_search): core_search failed: Redirect response '301 Moved Permanently' for url 'https://api.core.ac.uk/v3/search/works?q=timeline+of+events+in+new+york+city&page=1&pageSize=20'
+Redirect location: 'https://api.core.ac.uk/v3/search/works/?q=timeline+of+events+in+new+york+city&page=1&pageSize=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301
+20 2025-08-09 21:11:29: INFO: search.py:253 (async_core_search): core_search completed for query: timeline of events in new york city
+20 2025-08-09 21:11:29: INFO: search.py:226 (async_arxiv_search): arxiv_search completed for query: timeline of events in new york city
+20 2025-08-09 21:11:29: INFO: search.py:235 (async_brave_search): brave_search completed for query: timeline of events in new york city
+40 2025-08-09 21:11:29: ERROR: search.py:93 (core_search): core_search failed: Redirect response '301 Moved Permanently' for url 'https://api.core.ac.uk/v3/search/works?q=background+and+development+of+new+york&page=1&pageSize=20'
+Redirect location: 'https://api.core.ac.uk/v3/search/works/?q=background+and+development+of+new+york&page=1&pageSize=20'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301
+20 2025-08-09 21:11:29: INFO: search.py:253 (async_core_search): core_search completed for query: background and development of new york
+20 2025-08-09 21:11:29: INFO: search.py:244 (async_openalex_search): openalex_search completed for query: background and development of new york
+20 2025-08-09 21:11:30: INFO: search.py:217 (async_crossref_search): crossref_search completed for query: background and development of new york
+20 2025-08-09 21:11:30: INFO: search.py:226 (async_arxiv_search): arxiv_search completed for query: background and development of new york
+20 2025-08-09 21:11:30: INFO: search.py:235 (async_brave_search): brave_search completed for query: background and development of new york
+20 2025-08-09 21:11:30: INFO: tools.py:54 (deep_research): Deep search completed for query: What is the history of New York?
+20 2025-08-09 21:14:10: INFO: update.py:93 (perform_update): Starting update check for Akinus21/supreme_research_mcp...
+40 2025-08-09 21:14:10: ERROR: update.py:29 (get_latest_release): Failed to get latest release info: 404 Client Error: Not Found for url: https://api.github.com/repos/Akinus21/supreme_research_mcp/releases/latest
+30 2025-08-09 21:14:10: WARNING: update.py:99 (perform_update): Could not determine versions, skipping update.
+20 2025-08-09 21:14:10: INFO: tools.py:19 (deep_research): Performing deep search for query: What is the history of New York? with max results: 10
+20 2025-08-09 21:14:11: INFO: search.py:240 (async_openalex_search): openalex_search completed for query: historical overview of new york
+20 2025-08-09 21:14:12: INFO: search.py:231 (async_brave_search): brave_search completed for query: historical overview of new york
+20 2025-08-09 21:14:12: INFO: search.py:222 (async_arxiv_search): arxiv_search completed for query: historical overview of new york
+20 2025-08-09 21:14:13: INFO: search.py:213 (async_crossref_search): crossref_search completed for query: historical overview of new york
+20 2025-08-09 21:14:17: INFO: search.py:249 (async_core_search): core_search completed for query: historical overview of new york
+20 2025-08-09 21:14:17: INFO: search.py:240 (async_openalex_search): openalex_search completed for query: development timeline of new york city
+20 2025-08-09 21:14:18: INFO: search.py:213 (async_crossref_search): crossref_search completed for query: development timeline of new york city
+20 2025-08-09 21:14:18: INFO: search.py:231 (async_brave_search): brave_search completed for query: development timeline of new york city
+20 2025-08-09 21:14:18: INFO: search.py:222 (async_arxiv_search): arxiv_search completed for query: development timeline of new york city
+20 2025-08-09 21:14:22: INFO: search.py:249 (async_core_search): core_search completed for query: development timeline of new york city
+20 2025-08-09 21:14:23: INFO: search.py:240 (async_openalex_search): openalex_search completed for query: roots and evolution of new york state
+20 2025-08-09 21:14:23: INFO: search.py:213 (async_crossref_search): crossref_search completed for query: roots and evolution of new york state
+20 2025-08-09 21:14:23: INFO: search.py:231 (async_brave_search): brave_search completed for query: roots and evolution of new york state
+20 2025-08-09 21:14:25: INFO: search.py:222 (async_arxiv_search): arxiv_search completed for query: roots and evolution of new york state
+20 2025-08-09 21:14:28: INFO: search.py:249 (async_core_search): core_search completed for query: roots and evolution of new york state
+40 2025-08-09 21:14:28: ERROR: tools.py:58 (deep_research): Deep search failed for query What is the history of New York?: sequence item 0: expected str instance, dict found

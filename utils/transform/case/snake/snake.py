@@ -1,5 +1,5 @@
 import re
-from akinus_utils.logger import local as log
+from utils.logger import local as log
 
 def _split_words(text: str) -> list[str]:
     if not text:
@@ -10,17 +10,17 @@ def _split_words(text: str) -> list[str]:
         words = text.split()
     return [w.lower() for w in words]
 
-def upper_snake(text: str) -> str:
+def snake(text: str) -> str:
     """
-    Convert text to UPPER_SNAKE_CASE.
+    Convert text to snake_case.
 
     Args:
         text (str): Input string.
 
     Returns:
-        str: UPPER_SNAKE_CASE version of the input.
+        str: snake_case version of the input.
     """
     words = _split_words(text)
-    result = "_".join(w.upper() for w in words)
-    log("info", "case.upper_snake", f"'{text}' -> '{result}'")
+    result = "_".join(words)
+    log("info", "case.snake", f"'{text}' -> '{result}'")
     return result

@@ -1,4 +1,4 @@
-from akinus_utils.logger import local as log
+from utils.logger import local as log
 
 def lower(text: str) -> str:
     """

@@ -1,6 +1,6 @@
-from akinus_utils.logger import local as log
-from akinus_utils.transform.case import sentence as sentence_case
-from akinus_utils.transform.case import title as title_case
+from utils.logger import local as log
+from utils.transform.case import sentence as sentence_case
+from utils.transform.case import title as title_case
 
 async def apa(data: dict) -> str:
     """
