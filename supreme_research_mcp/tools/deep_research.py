@@ -12,13 +12,13 @@ from akinus.web.search.core import async_core_search
 from akinus.web.search.crossref import async_crossref_search
 
 from akinus.utils.logger import log
-from web_scraper.searches.utils import expand_query_ollama
-from web_scraper.searches.utils import refine_results
-from web_scraper.searches.utils import print_results
+from supreme_research_mcp.searches.utils import expand_query_ollama
+from supreme_research_mcp.searches.utils import refine_results
+from supreme_research_mcp.searches.utils import print_results
 from akinus.web.server.mcp import mcp
-from web_scraper.searches.extraction import extract_from_url
+from supreme_research_mcp.searches.extraction import extract_from_url
 from akinus.utils.exceptions import ScrapeError
-from web_scraper.searches.constants import *
+from supreme_research_mcp.searches.constants import *
 
 @mcp.tool()
 async def run_deep_research(query: str, limit: int) -> List[Dict[str, Any]]:

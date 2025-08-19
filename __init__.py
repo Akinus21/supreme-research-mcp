@@ -6,8 +6,8 @@ from . import logs
 from . import resources
 from . import scripts
 from . import web
-from . import web_scraper
-from . import web_scraper.egg-info
+from . import supreme_research_mcp
+from . import supreme_research_mcp.egg-info
 
 __all__ = [
     "akinus",
@@ -16,6 +16,6 @@ __all__ = [
     "resources",
     "scripts",
     "web",
-    "web_scraper",
-    "web_scraper.egg-info",
+    "supreme_research_mcp",
+    "supreme_research_mcp.egg-info",
 ]

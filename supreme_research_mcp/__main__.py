@@ -4,7 +4,7 @@ import asyncio
 from akinus.web.server.mcp import *
 
 # Import tools so they get registered via decorators
-import web_scraper.tools.deep_research as mcp_tools
+import supreme_research_mcp.tools.deep_research as mcp_tools
 
 def main():
 
